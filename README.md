@@ -34,3 +34,15 @@ CSV: text,weight,subtable columns; subtable names must uniquely match existing t
 ## Verification and deployment
 Run `node test.cjs` for backup validation and remapping, nested/inline rolls, dice limits, locks, meta-selection boundaries, unique/deck draws, range validation, and metadata round-trips.
 The GitHub Actions Pages workflow tests the app and publishes index.html on main pushes.
+
+### Nested folders
+
+Set a table's Folder to a path such as `World/Regions/Settlements`. Parent folders appear automatically in the indented folder filter; choosing a parent includes all descendants. Change the path to move a table. Folders are inferred from tables, so empty folders are not retained. JSON backups preserve paths.
+
+### Conditional entries
+
+Use an entry's **Conditions** button to require all or any matches against entry text selected by earlier tables in the same result. Operators are equals, contains, and does not equal (case-insensitive). Matching uses the selected text before dice/reference expansion. Missing earlier tables never match, including negative conditions. Multiple rolls of a source table accumulate: positive conditions match any earlier choice; does-not-equal requires all earlier choices to differ.
+
+Tables roll in their listed order. Parent choices are available to their sub-tables and inline references. Context resets for every generated result. Only eligible entries participate in weighted selection; displayed editor ranges describe the full table, while runtime odds are recalculated among eligible entries. No eligible entries produces an explicit notice.
+
+**Reroll unlocked** processes parts in order and retains locked choices as context. Rerolling a single part leaves other parts unchanged; use Reroll unlocked to refresh downstream results too. Deleting a referenced source table leaves conditions disabled until repaired. JSON preserves and remaps conditions; CSV/text exports do not preserve them.
