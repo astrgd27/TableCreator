@@ -57,3 +57,23 @@ console.log('PASS: syntax, backup validation/remapping, nested/circular rolls, d
  f.importData(JSON.stringify(data),'json');assert.equal(data.generators[1].combinations[2].tables[3].id,data.tables[9].id);assert.equal(data.tables[5].folder,'Test folder');assert.equal(data.tables[5].tags[0],'test');assert.equal(data.notebook[1].notes,'A note');f.validate(data);
  console.log('PASS: meta probability boundaries and table combinations, unique/deck exhaustion and reset, dice range gaps/overlaps, folder/tag/notebook/meta backup round-trip.');
 }
+
+// Nested paths and conditional choices across a result, imports and rerolls.
+{
+ const box={crypto:require('node:crypto').webcrypto,localStorage:{getItem:()=>null},document:{getElementById:()=>({})}};vm.createContext(box);
+ vm.runInContext(script.split("$('addCondition').onclick")[0]+`globalThis.api={folderPath,folderPaths,inFolder,runSetup,rerollResult,validate,importData,setState:s=>state=s};randomInt=()=>0;`,box);
+ const f=box.api;
+ assert.equal(f.folderPath(' World / Regions // Arctic / '),'World/Regions/Arctic');
+ assert.equal(JSON.stringify(f.folderPaths([{folder:'World/Regions/Arctic'}])),'["World","World/Regions","World/Regions/Arctic"]');
+ assert(f.inFolder({folder:'World/Regions/Arctic'},'World'));assert(!f.inFolder({folder:'Worlds'},'World'));
+ const condition={tableId:'biome',op:'equals',value:'Arctic'};
+ const data={version:1,tables:[{id:'biome',name:'Biome',folder:'World/Regions',entries:[{text:'Arctic',weight:1},{text:'Desert',weight:1}]},{id:'animal',name:'Creature',entries:[{text:'Polar bear',weight:1,conditions:[condition]},{text:'Camel',weight:1,conditions:[{...condition,op:'notEquals'}]}]}]};f.setState(data);f.validate(data);
+ const setup={mode:'linked',tables:[{id:'biome',count:1},{id:'animal',count:1}],batch:2};
+ const results=f.runSetup(setup);assert.equal(results[0].parts[1].text,'Polar bear');
+ assert.match(f.runSetup({mode:'single',tables:[{id:'animal',count:1}],batch:1})[0].parts[0].text,/no entries match/);
+ results[0].parts[0].locked=true;vm.runInContext('randomInt=n=>n-1',box);f.rerollResult(results[0]);assert.equal(results[0].parts[1].text,'Polar bear');
+ results[0].parts[0].locked=false;f.rerollResult(results[0]);assert.equal(results[0].parts[0].text,'Desert');assert.equal(results[0].parts[1].text,'Camel');
+ const backup=JSON.stringify(data);f.importData(backup,'json');assert.equal(data.tables[3].entries[0].conditions[0].tableId,data.tables[2].id);assert.equal(data.tables[2].folder,'World/Regions');f.validate(data);
+ data.tables[3].entries[0].conditions[0].tableId='bad';assert.throws(()=>f.validate(data),/conditions/);
+ console.log('PASS: nested folder boundaries, conditional filtering, missing context, locked and sequential rerolls, conditional backup remapping.');
+}
