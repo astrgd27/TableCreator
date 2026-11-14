@@ -145,3 +145,13 @@ NEW PRIMARY FACETS
 
 
 Installed under `default/religion`. All named sub-table links resolve to internal IDs.
+
+## Fantasy religion — full dossier
+
+The Templates screen includes a large narrative template under `default/religion`, installed once without replacing existing templates. Its editable source is `fantasy-religion-template.txt`.
+
+The template references 165 existing tables. It defines identity, origins, divine plurality, representation, teaching, ethics, worship, office, sacred places, festivals, family, death, economics, politics, and internal differences. Chance-based sections add monastic life, magic, mysteries, diaspora, otherworld contact, persecution, reform, decline/revival, and local situations. Named rolls drive nested conditions so forbidden or absent institutions are not elaborated by those branches. Reused rolls remain stable within one output.
+
+Primary table rolls retain their linked nuance sub-tables. Arrows denote those inherited qualifications; the template explicitly distinguishes these from universal doctrine. It is a fantasy worldbuilding scaffold, not a guarantee that all independently generated customs are mutually consistent or representative of a real religion. Typical dossiers contain about 3,000 words and approximately 200 total table expansions, varying by selected branches.
+
+The template's dependency references bind to the user's installed table IDs, survive renaming, and are included in directory exports for the AI companion. Installation never overwrites an edited template and does not repeat after a deliberate deletion or full directory replacement.
