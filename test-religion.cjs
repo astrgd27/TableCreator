@@ -1,0 +1,11 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const script=fs.readFileSync(__dirname+'/index.html','utf8').match(/<script>([\s\S]*?)<\/script>/)[1];
+let fail=false,saved='';const box={crypto:require('node:crypto').webcrypto,localStorage:{getItem:()=>null,setItem:(k,v)=>{if(fail)throw Error('quota');saved=v;}},document:{getElementById:()=>({})}};vm.createContext(box);
+vm.runInContext(fs.readFileSync(__dirname+'/religion-pack.js','utf8'),box);
+vm.runInContext(script.split('// FEATURE_EVENTS_START')[0]+`notify=()=>{};globalThis.api={installReligionPack,validate,rollTable,get:()=>state,set:s=>state=s,parseDirectory};`,box);
+const a=box.api;const old=JSON.parse(JSON.stringify(a.get()));assert.equal(a.installReligionPack(),true);const data=a.get();assert.equal(data.tables.length,old.tables.length+322);assert.equal(data.selected,old.selected);assert.equal(JSON.stringify(data.tables.slice(0,old.tables.length)),JSON.stringify(old.tables));a.validate(data);
+const added=data.tables.slice(old.tables.length);assert(added.every(t=>t.folder==='default/religion'));assert.equal(added.reduce((n,t)=>n+t.entries.length,0),4186);assert.equal(added.reduce((n,t)=>n+t.entries.filter(e=>e.subtable).length,0),2259);const ids=new Set(added.map(t=>t.id));for(const t of added)for(const e of t.entries)assert(!e.subtable||ids.has(e.subtable));for(const t of added)assert.equal(typeof a.rollTable(t.id),'string');assert.equal(a.installReligionPack(),false);assert.equal(data.tables.length,old.tables.length+322);
+a.set(JSON.parse(saved));assert.equal(a.installReligionPack(),false);
+a.set(a.parseDirectory(JSON.stringify(old)));assert.equal(a.installReligionPack(),false);assert.equal(a.get().tables.length,old.tables.length);
+a.set(old);fail=true;assert.equal(a.installReligionPack(),false);assert.equal(a.get(),old);
+console.log('PASS: all 322 tables, 4,186 entries and 2,259 links; existing data retained; one-time install; explicit replacement respected; quota failure rolls back.');

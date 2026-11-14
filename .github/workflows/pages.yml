@@ -23,11 +23,12 @@ jobs:
           node build-engine.cjs --check
           node test.cjs
           node test-features.mjs
+          node test-religion.cjs
       - uses: actions/configure-pages@v5
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html .nojekyll engine.mjs openapi.json API.md _site/
+          cp index.html .nojekyll engine.mjs openapi.json API.md religion-pack.js RELIGION_PACK.md _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
