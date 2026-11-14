@@ -19,12 +19,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Test table engine
-        run: node test.cjs
+        run: |
+          node build-engine.cjs --check
+          node test.cjs
+          node test-features.mjs
       - uses: actions/configure-pages@v5
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html .nojekyll _site/
+          cp index.html .nojekyll engine.mjs openapi.json API.md _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

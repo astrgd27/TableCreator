@@ -1,0 +1,179 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Table Forge API",
+    "version": "1.0.0",
+    "description": "Set servers to your own HTTPS API deployment. GitHub Pages does not run this API."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8787",
+      "description": "Local development; replace with your HTTPS deployment"
+    }
+  ],
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "paths": {
+    "/api/catalog": {
+      "post": {
+        "operationId": "catalog",
+        "summary": "List directory IDs",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "directory": {
+                    "$ref": "#/components/schemas/Directory"
+                  }
+                },
+                "required": [
+                  "directory"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Structured results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    },
+    "/api/generate": {
+      "post": {
+        "operationId": "generate",
+        "summary": "Generate weighted RPG results",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "directory": {
+                    "$ref": "#/components/schemas/Directory"
+                  },
+                  "request": {
+                    "$ref": "#/components/schemas/GenerationRequest"
+                  }
+                },
+                "required": [
+                  "directory",
+                  "request"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Structured results",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "401": {
+            "description": "Unauthorized"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
+    "schemas": {
+      "Directory": {
+        "type": "object",
+        "required": [
+          "version",
+          "tables"
+        ],
+        "properties": {
+          "version": {
+            "type": "integer",
+            "enum": [
+              1
+            ]
+          },
+          "tables": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "generators": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "templates": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "GenerationRequest": {
+        "type": "object",
+        "required": [
+          "type",
+          "id"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "table",
+              "generator",
+              "template"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "batch": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50
+          }
+        }
+      }
+    }
+  }
+}

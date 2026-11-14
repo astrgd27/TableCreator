@@ -46,3 +46,13 @@ Use an entry's **Conditions** button to require all or any matches against entry
 Tables roll in their listed order. Parent choices are available to their sub-tables and inline references. Context resets for every generated result. Only eligible entries participate in weighted selection; displayed editor ranges describe the full table, while runtime odds are recalculated among eligible entries. No eligible entries produces an explicit notice.
 
 **Reroll unlocked** processes parts in order and retains locked choices as context. Rerolling a single part leaves other parts unchanged; use Reroll unlocked to refresh downstream results too. Deleting a referenced source table leaves conditions disabled until repaired. JSON preserves and remaps conditions; CSV/text exports do not preserve them.
+
+### Full directory backups
+
+**Export directory** downloads every table, generator (including meta-combinations), template, folder/subfolder path, and notebook entry. **Import directory** validates a complete backup, shows two separate warning screens, and requires typing `REPLACE` before wiping and replacing this browser's directory. Export your current directory from the first warning if you need a recovery copy. Storage is written before the active in-memory directory changes; failed validation or a storage-quota error leaves the old directory intact. Import tables still merges rather than replacing. Session roll history and deck positions are temporary and are reset on directory replacement.
+
+### Templates
+
+The new Templates screen creates paragraph-based narratives. Use inline table rolls, named reusable results, condition/else blocks, percentage-chance blocks, repeat blocks, and dice. Click **Add monarchy example** for a complete working settlement description. Template edits save automatically, including drafts with syntax errors; errors appear when generating. Template table bindings survive table renames. Saved templates and their bindings travel with directory exports and merge imports.
+
+For AI tool access and a self-hostable backend, see [API.md](API.md).
