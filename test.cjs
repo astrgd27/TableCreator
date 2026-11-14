@@ -19,3 +19,19 @@ a.importData('text,weight\n"Quoted, result",3','csv','CSV test');assert.equal(a.
 a.importData('Alpha\n\nBeta','text','Text test');assert.equal(a.getState().tables[5].entries.length,2);
 assert.equal(a.rollTable('missing'),'[missing table]');
 console.log('PASS: syntax, backup validation/remapping, nested/circular rolls, dice bounds, CSV parsing and import, text import, invalid import atomicity.');
+
+// Saved generators, references, and selective rerolls.
+{
+ const box={crypto:require('node:crypto').webcrypto,localStorage:{getItem:()=>null},document:{getElementById:()=>({})}};
+ vm.createContext(box);
+ vm.runInContext(script.split("$('editView').onclick")[0]+`globalThis.api={validate,importData,rollTable,bindRefs,rerollPart,setState:s=>state=s};`,box);
+ const f=box.api;
+ const data={version:1,tables:[{id:'a',name:'Scene',entries:[{text:'A [Creature] guards [Treasure].',weight:1}]},{id:'b',name:'Creature',entries:[{text:'wyrm',weight:1}]},{id:'c',name:'Treasure',entries:[{text:'gold',weight:1}]}],generators:[{id:'g',name:'Scene maker',mode:'linked',batch:2,tables:[{id:'a',count:1},{id:'c',count:3}]}]};
+ f.setState(data);f.bindRefs(data.tables[0].entries[0]);
+ assert.equal(f.rollTable('a'),'A wyrm guards gold.');data.tables[1].name='Renamed';assert.equal(f.rollTable('a'),'A wyrm guards gold.');
+ const part={tableId:'c',text:'keep',locked:true};f.rerollPart(part);assert.equal(part.text,'keep');part.locked=false;f.rerollPart(part);assert.equal(part.text,'gold');
+ f.importData(JSON.stringify(data),'json');assert.equal(data.generators.length,2);assert.equal(data.generators[1].tables[0].id,data.tables[3].id);assert.equal(data.tables[3].entries[0].refs.Creature,data.tables[4].id);assert.equal(f.rollTable(data.tables[3].id),'A wyrm guards gold.');f.validate(data);
+ data.tables[1].entries=[{text:'[Scene]',weight:1,refs:{Scene:'a'}}];assert.match(f.rollTable('a'),/circular link stopped/);
+ assert.throws(()=>f.validate({...data,generators:[{id:'bad',name:'Bad',mode:'linked',batch:1,tables:[{id:'missing',count:1}]}]}));
+ console.log('PASS: saved generator and reference backup remapping, rename stability, inline cycles, locked/unlocked rerolls, invalid presets.');
+}
