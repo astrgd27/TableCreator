@@ -74,3 +74,9 @@ Requests: 10 MB. Directory: 500 tables, 100 saved generators, 200 templates. Tem
 `{{pick emphasis = Ritual | Learning | Service}}` silently stores one uniformly chosen literal option. `{{emphasis}}` displays it; ordinary `if` blocks can use it.
 
 `{{pick themes 2..3 with emphasis = Ritual | Learning | Service}}` chooses a uniform count from 2 through 3, samples distinct options without replacement, and includes the previously assigned `emphasis`. Omit `with emphasis` for an unconstrained sample. Results are comma-separated strings; `contains` can check an individual theme. Options cannot contain `|` or template delimiters; avoid overlapping labels when using `contains`. One literal option also assigns a fixed value. Lists allow up to 100 unique, nonempty options. Choices are exposed in the generated `variables` object and do not count as table expansions.
+
+### Drawing a comma-separated list
+
+`{{draw domains = Deity domains}}` silently draws one unused entry and appends it to the named list. Repeating this directive adds another entry; `{{domains}}` displays the results separated by commas. A list uses one table and resets for every generation. Entry weights still apply, and ordinary rolls remain independent. Linked sub-tables within that list also use draws without replacement. Exhaustion produces an explicit error rather than repeating an entry.
+
+The default deity template always draws one domain and nests continuation chances of 60%, 35%, 20%, and 10%. The resulting probabilities for exactly 1–5 domains are 40%, 39%, 16.8%, 3.78%, and 0.42%. The second draw must succeed before the third is considered, and so on. Domain choices are independent of their count and are not predefined combinations.

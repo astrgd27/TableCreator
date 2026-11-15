@@ -42,3 +42,6 @@ const pickData=structuredClone(data);pickData.templates=[{id:'p',name:'Picks',so
 assert.equal(createEngine(pickData).generate({type:'template',id:'p'}).text,'works');
 const pickHttp=await post('/api/generate',{directory:pickData,request:{type:'template',id:'p'}});assert.equal((await pickHttp.json()).text,'works');
 console.log('PASS: reusable choices, unique sampling, required themes, bounds, invalid inputs and HTTP engine parity.');
+const drawData=structuredClone(data);drawData.templates=[{id:'draw',name:'Draw',source:'{{draw list = Government}}{{list}}'}];assert.equal(createEngine(drawData).generate({type:'template',id:'draw'}).text,'Monarchy');const drawHttp=await post('/api/generate',{directory:drawData,request:{type:'template',id:'draw'}});assert.equal((await drawHttp.json()).text,'Monarchy');
+a.setState(structuredClone(data));assert.throws(()=>a.runTemplate({source:'{{draw x = Government}}{{draw x = Succession}}'}),/same table/);assert.throws(()=>a.runTemplate({source:'{{draw x = Government}}{{draw x = Government}}'}),/No unused/);assert.equal(a.runTemplate({source:'{{draw x = Government}}{{table:Government}} {{x}}'}).text,'Monarchy Monarchy');
+console.log('PASS: unique draw lists, exhaustion, repeat isolation, and shared HTTP engine support.');

@@ -1,4 +1,4 @@
-{{roll deity = Deity personal name}}{{roll domains = Deity portfolio}}{{roll appearance = Deity appearance}}{{roll origin = Divine origin}}{{roll temperament = Divine temperament}}
+{{roll deity = Deity personal name}}{{draw domains = Deity domains}}{{chance 60}}{{draw domains = Deity domains}}{{chance 35}}{{draw domains = Deity domains}}{{chance 20}}{{draw domains = Deity domains}}{{chance 10}}{{draw domains = Deity domains}}{{end}}{{end}}{{end}}{{end}}{{roll appearance = Deity appearance}}{{roll origin = Divine origin}}{{roll temperament = Divine temperament}}
 {{deity}}
 Fantasy deity - full dossier
 

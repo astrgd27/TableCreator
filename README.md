@@ -71,8 +71,14 @@ The editor collection uses the same folder hierarchy. New folder creates an empt
 
 ### Fantasy deity dossier
 
-Select **Fantasy deity - full dossier** in Templates under `default/religion`. It starts with a personal name, one to three distinct domains, appearance, origin, and temperament. The 15 optional cult themes have independent 12–25% inclusion chances, averaging about three brief themed paragraphs. Any theme can be omitted; a short profile alone is possible. Across 400 test runs the mean was approximately 190 words, far shorter than the broader religion dossier.
+Select **Fantasy deity - full dossier** in Templates under `default/religion`. It starts with a personal name, one to five distinct domains, appearance, origin, and temperament. The 15 optional cult themes have independent 12–25% inclusion chances, averaging about three brief themed paragraphs. Any theme can be omitted; a short profile alone is possible. Across 400 test runs the mean was approximately 190 words, far shorter than the broader religion dossier.
 
-Two new tables in `default/religion/Divinities and cosmology` supply personal names and portfolios. The portfolio table weights one domain at 45%, two at 45%, and three at 10%; each row is a complete portfolio without repeated domains. Existing religion tables remain unchanged and are all reachable via thematic alternatives or linked sub-tables. Rare alternative accounts are explicitly local/historical. The original religion template remains available.
+Two new tables in `default/religion/Divinities and cosmology` supply personal names and individual domains. The Deity domains table has one domain per row. The template always draws one, then nests chances of 60%, 35%, 20%, and 10% for each additional domain, up to five. Draws use the remaining entries, so every combination is possible without duplicates. Existing religion tables remain unchanged and are all reachable via thematic alternatives or linked sub-tables. Rare alternative accounts are explicitly local/historical. The original religion template remains available.
 
 The new template and its two tables are installed once, atomically. Directory exports include them and work with the existing AI backend; an explicit directory import remains authoritative.
+
+### Drawing a comma-separated list
+
+`{{draw domains = Deity domains}}` silently draws one unused entry and appends it to the named list. Repeating this directive adds another entry; `{{domains}}` displays the results separated by commas. A list uses one table and resets for every generation. Entry weights still apply, and ordinary rolls remain independent. Linked sub-tables within that list also use draws without replacement. Exhaustion produces an explicit error rather than repeating an entry.
+
+The default deity template always draws one domain and nests continuation chances of 60%, 35%, 20%, and 10%. The resulting probabilities for exactly 1–5 domains are 40%, 39%, 16.8%, 3.78%, and 0.42%. The second draw must succeed before the third is considered, and so on. Domain choices are independent of their count and are not predefined combinations.

@@ -43,6 +43,6 @@ Existing installations receive a one-time folder migration. It preserves all exi
 
 ## Deity companion template
 
-`deity-template.js` / `fantasy-deity-template.txt` add **Fantasy deity - full dossier** beside the religion template. This is a short deity-and-cult account, with a guaranteed profile followed by sparse thematic paragraphs. All 322 original tables are reachable, but typical outputs draw only a small subset. `deity-pack.js` adds 48 personal names and 75 weighted domain portfolios in the existing Divinities and cosmology folder. The supplemental tables use stable bundle keys and do not alter the original 322-table pack or its links.
+`deity-template.js` / `fantasy-deity-template.txt` add **Fantasy deity - full dossier** beside the religion template. This is a short deity-and-cult account, with a guaranteed profile followed by sparse thematic paragraphs. All 322 original tables are reachable, but typical outputs draw only a small subset. `deity-pack.js` adds 48 personal names and 30 individual domains in the existing Divinities and cosmology folder. The supplemental tables use stable bundle keys and do not alter the original 322-table pack or its links.
 
-`test-deity.cjs` checks all-table reachability, 1–3 distinct domains and exact weighting, average length over 400 generations, retention of the religion template, missing-dependency rollback, storage rollback, idempotence, and explicit directory import behavior.
+`test-deity.cjs` checks all-table reachability, 1–5 distinct domains and decreasing continuation chances, average length over 400 generations, retention of the religion template, missing-dependency rollback, storage rollback, idempotence, and explicit directory import behavior.
