@@ -82,3 +82,7 @@ The new template and its two tables are installed once, atomically. Directory ex
 `{{draw domains = Deity domains}}` silently draws one unused entry and appends it to the named list. Repeating this directive adds another entry; `{{domains}}` displays the results separated by commas. A list uses one table and resets for every generation. Entry weights still apply, and ordinary rolls remain independent. Linked sub-tables within that list also use draws without replacement. Exhaustion produces an explicit error rather than repeating an entry.
 
 The default deity template always draws one domain and nests continuation chances of 60%, 35%, 20%, and 10%. The resulting probabilities for exactly 1–5 domains are 40%, 39%, 16.8%, 3.78%, and 0.42%. The second draw must succeed before the third is considered, and so on. Domain choices are independent of their count and are not predefined combinations.
+
+### Replace a table from a file
+
+In the table editor, choose **Upload & replace** beside **Paste entries**. Select a TXT file (one entry per line), a CSV with `text,weight,subtable` columns, or a JSON containing one table or an entry array. Preview the upload, then choose **Replace table entries**. This replaces all entries, including their weights, conditions, and outgoing links, while retaining the table's name, folder, and ID so existing references keep working. Export the table first if you want a backup. Invalid uploads and storage failures leave the table unchanged; multi-table JSON belongs in Import tables instead.
