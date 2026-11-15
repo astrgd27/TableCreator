@@ -1,17 +1,15 @@
-# Religion Worldbuilder — variety-expanded edition
+# Religion Worldbuilder — corrected optional-complications edition
 
-Source: Religion_Worldbuilder_Variety_Expanded(1).zip supplied by the user.
+Source: Religion_Worldbuilder_Optional_Complications(2).zip supplied by the user.
 
 - 322 tables; no added or renamed tables.
-- 12,472 weighted entries.
-- 6,338 sub-table links, all resolved to existing tables.
+- 8,080 weighted entries.
+- 3,061 sub-table links, all resolved to existing tables.
 - Root folder: `default/religion`, organized into subject subfolders.
 
 ## Replacement update
 
-Version 2 overwrites the bundled religion rows on the next app load. Existing table IDs are reused where possible so saved generators and references remain valid. Missing bundled tables are restored. Other folders are not replaced. Successful installation is recorded so subsequent reloads do not overwrite later edits. A storage failure leaves the previous directory intact.
-
-The default religion dossier is replaced with its version 3 source. The old Settlement narrative test template and its Add monarchy example button are removed. Explicit full-directory imports continue to mean the imported directory is authoritative.
+Version 3 replaces only the entries of the 322 matching bundled religion tables on the next app load, using the supplied CSV text, weights and links exactly. Existing IDs, folders, names, custom metadata, table order, saved generators and all templates remain intact. Unrelated tables, including deity names and domains, are not changed. Missing bundled tables are restored. The update runs once; later reloads preserve subsequent edits. Storage failures roll back the update. Explicit full-directory imports remain authoritative.
 
 ## Full religion dossier
 
