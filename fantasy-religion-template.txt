@@ -5,13 +5,33 @@ This account distinguishes public teaching, lived practice, and disputed local i
 
 IDENTITY AND PURPOSE
 
-{{roll priority = Religious centrality}}{{roll identity = Religious identity}}{{roll exclusivity = Religious exclusivity}}{{roll domain = Religion domains}}{{roll plurality = Divine plurality}}The tradition's central concern is expressed in the teaching “{{priority}}.” Its characteristic field of religious responsibility is {{domain}}. This concern shapes what its adherents praise, what they fear losing, and what they expect a good life to accomplish.
+{{roll priority = Religious centrality}}{{roll identity = Religious identity}}{{roll exclusivity = Religious exclusivity}}{{roll domain = Religion domains}}{{roll plurality = Divine plurality}}{{pick core = Ritual | Learning | Service | Ancestors | Mysticism | Sacred landscape | Covenant | Devotion}}
+{{if priority contains ancestor}}{{pick core = Ancestors}}{{end}}{{if priority contains ritual}}{{pick core = Ritual}}{{end}}{{if priority contains knowledge}}{{pick core = Learning}}{{end}}{{if priority contains study}}{{pick core = Learning}}{{end}}{{if priority contains ethical}}{{pick core = Service}}{{end}}{{if priority contains personal deity}}{{pick core = Devotion}}{{end}}{{if priority contains social relations}}{{pick core = Service}}{{end}}{{if priority contains cosmic balance}}{{pick core = Sacred landscape}}{{end}}{{if priority contains moral}}{{pick core = Service}}{{end}}{{if priority contains community}}{{pick core = Service}}{{end}}{{if priority contains ecsta}}{{pick core = Mysticism}}{{end}}{{if priority contains liberation}}{{pick core = Mysticism}}{{end}}{{if priority contains covenant}}{{pick core = Covenant}}{{end}}{{if priority contains devotion}}{{pick core = Devotion}}{{end}}{{if priority contains landscape}}{{pick core = Sacred landscape}}{{end}}
+{{pick emphases 2..4 with core = Ritual | Learning | Service | Ancestors | Mysticism | Sacred landscape | Covenant | Devotion}}
+{{pick scale = Household circles | Village congregations | Itinerant networks | Regional institutions}}
+{{if identity contains family}}{{pick scale = Household circles}}{{end}}{{if identity contains occupation}}{{pick scale = Itinerant networks}}{{end}}
+{{pick spread = A compact homeland | Scattered enclaves | A chain of travel routes | Overlapping local communities}}
+{{pick cohesion = Shared custom | Friendly diversity | Negotiated coexistence | Open disagreement}}
+{{pick era = Continuity | Quiet adaptation | Recent foundation | Renewal | Contraction | Dormancy | Fragmentation | Expansion}}
+{{pick ritual_detail = brief | full}}{{if emphases contains Ritual}}{{pick ritual_detail = extended}}{{end}}
+{{pick learning_detail = brief | full}}{{if emphases contains Learning}}{{pick learning_detail = extended}}{{end}}
+{{pick service_detail = brief | full}}{{if emphases contains Service}}{{pick service_detail = extended}}{{end}}
+{{pick ancestors_detail = brief | full}}{{if emphases contains Ancestors}}{{pick ancestors_detail = extended}}{{end}}
+{{pick mystic_detail = brief | full}}{{if emphases contains Mysticism}}{{pick mystic_detail = extended}}{{end}}
+{{pick landscape_detail = brief | full}}{{if emphases contains Sacred landscape}}{{pick landscape_detail = extended}}{{end}}
+{{pick covenant_detail = brief | full}}{{if emphases contains Covenant}}{{pick covenant_detail = extended}}{{end}}
+{{pick devotion_detail = brief | full}}{{if emphases contains Devotion}}{{pick devotion_detail = extended}}{{end}}
+The tradition's central concern is expressed in the teaching “{{priority}}.” Its characteristic field of religious responsibility is {{domain}}. This concern shapes what its adherents praise, what they fear losing, and what they expect a good life to accomplish.
+
+The most developed strands of this tradition are {{emphases}}. These emphases guide the attention given below; an explicit prohibition still takes precedence over an emphasis.
+
+{{if scale = Household circles}}Much of religious belonging is sustained in households, with wider gatherings linking otherwise intimate circles.{{else}}{{if scale = Village congregations}}The ordinary congregation is a settlement community; local familiarity matters more to most members than distant institutions.{{else}}{{if scale = Itinerant networks}}Practitioners connect through visits, work, and travel. A gathering may disperse without ending the relationships that sustain it.{{else}}Regional institutions link several communities, although participation need not be uniform across their territory.{{end}}{{end}}{{end}} {{if spread = A compact homeland}}Most adherents live within a compact homeland, and distant examples remain unusual.{{else}}{{if spread = Scattered enclaves}}Its communities form scattered enclaves separated by places where other traditions predominate.{{else}}{{if spread = A chain of travel routes}}Travel routes connect its communities more reliably than continuous territorial control.{{else}}Its communities overlap those of other traditions rather than defining a single religious frontier.{{end}}{{end}}{{end}}
 
 Belonging is understood in these terms: “{{identity}}.” Its position toward other paths is “{{exclusivity}}.” These statements describe the dominant public position; personal devotion and local membership need not follow exactly the same boundaries.
 
 {{if identity contains Belonging follows family descent}}Religious identity is inherited as a social relationship, not simply chosen as an opinion. Adoption, marriage, mixed households, and estrangement therefore raise practical questions: {{table:Membership boundary}}.{{else}}{{if identity contains Only selected initiates know the full teaching}}Public participation does not confer knowledge of the innermost teaching. Access is governed by the rule “{{table:Sacred secrecy}}.”{{else}}{{if identity contains Membership follows occupation}}Religious obligations travel with a person's work. Changing one's trade can therefore alter one's ritual community; the resulting social complication is {{table:Social consequence}}.{{else}}{{if identity contains One may belong to multiple temples}}Temple allegiance is overlapping rather than exclusive. A recurrent encounter between communities illustrates how that works: {{table:Interreligious encounter}}.{{else}}{{chance 45}}The boundary is less tidy in practice: {{table:Membership boundary}}.{{end}}{{end}}{{end}}{{end}}{{end}}
 
-{{if exclusivity contains Only this tradition is true}}Teachers distinguish the truth of their doctrine from the permitted treatment of outsiders. The actual rule of contact is “{{table:Religious boundary with outsiders}}.”{{else}}{{if exclusivity contains Multiple paths are equally valid}}Recognition of other paths does not eliminate disputes over local practice. One example is {{table:Interreligious encounter}}.{{else}}{{if exclusivity contains Membership excludes competing rites}}Joining another rite can become a question of loyalty, even when neighbors remain on friendly terms. A disputed boundary is {{table:Membership boundary}}.{{end}}{{end}}{{end}}
+{{if exclusivity contains Only this tradition is true}}Teachers distinguish the truth of their doctrine from the permitted treatment of outsiders. The actual rule of contact is “{{table:Religious boundary with outsiders}}.”{{else}}{{if exclusivity contains Multiple paths are equally valid}}Recognition of other paths shapes everyday contact. One example is {{table:Interreligious encounter}}.{{else}}{{if exclusivity contains Membership excludes competing rites}}Joining another rite can become a question of loyalty, even when neighbors remain on friendly terms. A disputed boundary is {{table:Membership boundary}}.{{end}}{{end}}{{end}}
 
 {{chance 65}}Practical membership arrangements are “{{table:Religious membership}}.” Where these differ from the identity stated above, they describe access to a particular congregation or rite rather than a replacement for the tradition’s broader identity.{{end}}
 
@@ -19,7 +39,7 @@ ORIGINS AND REMEMBERED HISTORY
 
 {{roll founder = Religious founder}}{{roll founding = Founding circumstance}}{{roll revelation = Revelation source}}The remembered origin centers on “{{founder}}.” The circumstances in which the tradition took shape are “{{founding}}.” Its account of the source of religious knowledge is “{{revelation}}.”
 
-{{if founder contains No single founder is acknowledged}}There is no single founder whose biography settles all questions. Communities instead argue from inherited practice, remembered agreements, and the authority of those who transmitted them. A representative origin story adds this detail: {{table:Origin account}}.{{else}}{{if founder contains Several founders are honored by different schools}}The different founding lineages preserve rival accounts of what deserves priority. Their present dispute is {{table:Doctrinal disagreement}}.{{else}}{{chance 70}}A detail repeated in accounts of the founding is {{table:Origin account}}. Its interpretation is not uncontested: {{table:Mythic interpretation}}.{{end}}{{end}}{{end}}
+{{if founder contains No single founder is acknowledged}}There is no single founder whose biography settles all questions. Communities preserve inherited practice, remembered agreements, and the authority of those who transmitted them. A representative origin story adds this detail: {{table:Origin account}}.{{else}}{{if founder contains Several founders are honored by different schools}}The different founding lineages preserve rival accounts of what deserves priority. Their present dispute is {{table:Doctrinal disagreement}}.{{else}}{{chance 70}}A detail repeated in accounts of the founding is {{table:Origin account}}. A traditional reading is {{table:Mythic interpretation}}.{{end}}{{end}}{{end}}
 
 {{chance 80}}A later turning point changed the tradition's institutions: {{table:Historical turning point}}. The response remembered by its authorities was {{table:Institutional response}}.{{end}}
 
@@ -49,6 +69,8 @@ IMAGES, SYMBOLS, AND MATERIAL PRESENCE
 
 {{chance 65}}The wider religious aesthetic is “{{table:Religious aesthetics}}.” Clothing used for religious occasions follows “{{table:Ritual clothing}}.”{{end}}
 
+{{if devotion_detail = extended}}The emphasis on devotion makes the stated image policy especially visible in everyday conduct. What people display, cover, carry, or deliberately leave unrepresented expresses the same commitments as their formal worship.{{end}}
+
 TEACHING, MEMORY, AND DOUBT
 
 {{roll scripture = Sacred text status}}{{roll prophecy = Prophetic authority}}The status of sacred texts is “{{scripture}}.” The standing of prophetic authority is “{{prophecy}}.”
@@ -59,9 +81,13 @@ TEACHING, MEMORY, AND DOUBT
 
 {{if prophecy contains No prophetic institution exists}}There is no prophetic office whose pronouncement automatically settles a dispute.{{else}}{{if prophecy contains Prophecy ended with the founder}}New revelations are judged against a closed age of prophecy rather than automatically added to its authority.{{else}}{{if prophecy contains Prophecy is distrusted as political manipulation}}A claim of revelation may provoke investigation instead of obedience. The practical dispute is {{table:Authority dispute}}.{{else}}{{chance 55}}An omen or oracle is interpreted under the rule {{table:Omen interpretation}}.{{end}}{{end}}{{end}}{{end}}
 
-{{chance 60}}The organization of religious education is “{{table:Religious education}}.”{{end}}
+{{if learning_detail != brief}}{{chance 60}}The organization of religious education is “{{table:Religious education}}.”{{end}}
 
 The place of questioning in religious education is “{{table:Religious education of doubt}}.” {{chance 65}}A community teaches its young through “{{table:Education and scholarship}}.”{{end}}
+
+{{end}}
+
+{{if learning_detail = extended}}Learning is a sustained religious activity here, not merely preparation for a ceremony. A representative lesson uses this method: {{table:Teaching method}}. Experienced practitioners are remembered for how they transmit knowledge as well as for what they know.{{end}}
 
 ETHICS, OBLIGATION, AND REPAIR
 
@@ -71,9 +97,13 @@ ETHICS, OBLIGATION, AND REPAIR
 
 The status of religious law is “{{law}}.” {{if law contains No separate religious law exists}}There is no independent sacred legal code or religious court assumed here. Moral disputes may still be debated through “{{table:Sacred conflict}}.”{{else}}A failure of obligation is addressed through “{{table:Religious punishment and restoration}}.” Restoring relations is governed by “{{table:Religious reconciliation}}.”{{end}}
 
-{{chance 75}}A recurring case tests the limits of the teaching: {{table:Moral dilemma}}. One method of reaching a settlement is {{table:Conflict resolution}}.{{end}}
+{{if service_detail != brief}}{{chance 75}}A recurring case tests the limits of the teaching: {{table:Moral dilemma}}. One method of reaching a settlement is {{table:Conflict resolution}}.{{end}}
 
 {{chance 65}}A major taboo is “{{table:Sacred taboo}}.” The recognized exception is {{table:Taboo exception}}.{{end}}
+
+{{end}}
+
+{{if service_detail = extended}}Service gives the moral teaching a practical setting. One everyday undertaking is {{table:Popular devotion}}. Its value is judged through obligations to others, with the stated law and account of wrongdoing setting its limits.{{end}}
 
 PUBLIC RITES AND THE HOUSEHOLD
 
@@ -85,13 +115,17 @@ The theology of sacrifice is “{{sacrifice}}.” {{if sacrifice contains Sacrif
 
 At home, a representative observance is {{table:Household devotion}}. {{if frequency contains Annual festivals with little daily worship}}This is a household custom, not evidence of a compulsory daily liturgy.{{else}}{{if frequency contains Rituals only at major life events}}The custom is associated with significant occasions rather than required every day.{{else}}{{chance 65}}The religion also enters daily life through “{{table:Religious daily life}}.”{{end}}{{end}}{{end}}
 
-{{chance 65}}Ordinary food practices follow “{{table:Dietary religion}}.” {{chance 55}}Purity is explained through “{{table:Purity and pollution}}.”{{end}}{{end}}
+{{if ritual_detail != brief}}{{chance 65}}Ordinary food practices follow “{{table:Dietary religion}}.” {{chance 55}}Purity is explained through “{{table:Purity and pollution}}.”{{end}}{{end}}
 
 {{chance 45}}Songs, jokes, and play reveal a less formal side of devotion. The musical tradition is “{{table:Religious music}},” while the place of humor is “{{table:Religious humor and play}}.”{{end}}
 
+{{end}}
+
+{{if ritual_detail = extended}}The rhythm already stated—“{{frequency}}”—organizes collective anticipation and memory. The importance of ritual need not mean frequent ritual: a rare observance can require long preparation, while a familiar daily gesture can carry a lifetime of associations.{{end}}
+
 PEOPLE, OFFICES, AND POWER
 
-{{roll priesthood = Priesthood structure}}{{roll authority = Religious authority}}Ritual office is organized as “{{priesthood}}.” The structure of religious authority is “{{authority}}.” These are distinct questions: an officiant's ability to perform a rite need not confer authority to settle doctrine.
+{{roll priesthood = Priesthood structure}}{{roll authority = Religious authority}}Ritual office is organized as “{{priesthood}}.” The structure of religious authority is “{{authority}}.” {{if priesthood contains No permanent clergy}}Even a large gathering relies on temporary responsibility rather than a permanent clerical establishment.{{else}}{{if scale = Household circles}}Specialists serve the household circles without making every home a temple institution.{{else}}{{if scale = Itinerant networks}}Officeholders maintain relationships across gatherings and journeys rather than depending on one continuous congregation.{{end}}{{end}}{{end}} These are distinct questions: an officiant's ability to perform a rite need not confer authority to settle doctrine.
 
 {{if priesthood contains No permanent clergy}}Ritual responsibilities fall to participants or temporary custodians. There is no permanent priestly career assumed here, and a specialist consulted for a particular need need not belong to a clerical estate.{{else}}A representative appointment follows this procedure: {{table:Priestly appointment}}. Relations between officeholders and other worshipers are described by “{{table:Lay and clerical distinction}}.” {{chance 60}}The calling into religious work is understood as “{{table:Religious vocation}}.”{{end}}{{end}}
 
@@ -99,19 +133,19 @@ PEOPLE, OFFICES, AND POWER
 
 Religious rank is governed by “{{table:Religious social rank}}.” Access to roles in relation to gender is described by “{{table:Gender and religious roles}}.”
 
-{{chance 70}}RETREAT AND DISCIPLINE
+{{pick retreat_module = omitted | brief | full}}{{if mystic_detail = extended}}{{pick retreat_module = full}}{{end}}{{if retreat_module != omitted}}RETREAT AND DISCIPLINE
 
-{{roll monastic = Monastic organization}}The place of monastic life is “{{monastic}}.” {{if monastic contains No monastic institution exists}}There is no monastery or monastic order in this account. Private discipline can still exist, but it is not assigned an institutional rule, estate, or chain of abbots.{{else}}A discipline practiced within this setting is “{{table:Mystical discipline}}.” {{chance 65}}The kind of exemplary person associated with it is “{{table:Holy person archetype}}.”{{end}} {{if monastic contains Monastic orders compete over interpretation}}A concrete point of disagreement is {{table:Doctrinal disagreement}}.{{else}}{{if monastic contains Vows are temporary}}Returning to household life can be an expected completion of the discipline rather than a betrayal of it.{{else}}{{if monastic contains Monastics may marry}}Marriage is not treated as evidence that a practitioner has abandoned this form of religious life.{{end}}{{end}}{{end}}{{end}}{{end}}
+{{roll monastic = Monastic organization}}The place of monastic life is “{{monastic}}.” {{if retreat_module != brief}}{{if monastic contains No monastic institution exists}}There is no monastery or monastic order in this account. Private discipline can still exist, but it is not assigned an institutional rule, estate, or chain of abbots.{{else}}A discipline practiced within this setting is “{{table:Mystical discipline}}.” {{chance 65}}The kind of exemplary person associated with it is “{{table:Holy person archetype}}.”{{end}} {{if monastic contains Monastic orders compete over interpretation}}A concrete point of disagreement is {{table:Doctrinal disagreement}}.{{else}}{{if monastic contains Vows are temporary}}Returning to household life can be an expected completion of the discipline rather than a betrayal of it.{{else}}{{if monastic contains Monastics may marry}}Marriage is not treated as evidence that a practitioner has abandoned this form of religious life.{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}
 
-{{chance 65}}EXEMPLARY LIVES
+{{pick saints_module = omitted | brief | full}}{{if devotion_detail = extended}}{{pick saints_module = full}}{{end}}{{if saints_module != omitted}}EXEMPLARY LIVES
 
-{{roll saints = Saint and hero veneration}}The treatment of exemplary human lives follows “{{saints}}.” {{if saints contains Veneration of humans is forbidden}}No saintly intercessor or human cult is assumed; remembered lives may still serve as ethical examples.{{else}}{{chance 60}}A representative exemplary figure is “{{table:Holy person archetype}}.”{{end}}{{end}}{{end}}
+{{roll saints = Saint and hero veneration}}The treatment of exemplary human lives follows “{{saints}}.” {{if saints_module != brief}}{{if saints contains Veneration of humans is forbidden}}No saintly intercessor or human cult is assumed; remembered lives may still serve as ethical examples.{{else}}{{chance 60}}A representative exemplary figure is “{{table:Holy person archetype}}.”{{end}}{{end}}{{end}}{{end}}
 
 SANCTUARIES AND SACRED LANDSCAPE
 
 {{roll geography = Religious sacred geography network}}Sacred places relate to one another through “{{geography}}.” The religious understanding of landscape is “{{table:Sacred landscape}}.” A representative holy place is “{{table:Sacred site}},” distinguished locally by the feature {{table:Shrine feature}}.
 
-{{chance 70}}Where an enclosed sanctuary is maintained, its arrangement is “{{table:Temple design}}.” The broader architectural tradition is “{{table:Religious architecture}},” and its interior includes the detail {{table:Temple interior}}.{{end}}
+{{if landscape_detail != brief}}{{chance 70}}Where an enclosed sanctuary is maintained, its arrangement is “{{table:Temple design}}.” The broader architectural tradition is “{{table:Religious architecture}},” and its interior includes the detail {{table:Temple interior}}.{{end}}
 
 {{chance 65}}Pilgrimage is directed toward “{{table:Pilgrimage geography}}.” A representative journey takes the form “{{table:Pilgrimage tradition}}.” The difficulty most often remembered by travelers is {{table:Pilgrimage obstacle}}.{{end}}
 
@@ -121,13 +155,19 @@ SANCTUARIES AND SACRED LANDSCAPE
 
 {{chance 55}}The relationship with animals is “{{table:Sacred animal relationship}}.” This describes a religious obligation or association rather than automatically establishing a deity in animal form.{{end}}
 
+{{end}}
+
+{{if landscape_detail = extended}}Sacred landscape is one of the strongest ways this tradition is recognized. The network described above—“{{geography}}”—shapes how worshipers tell journeys and remember places, even when no building marks the site.{{end}}
+
 FESTIVALS AND THE LIFE COURSE
 
 {{roll festivals = Festival calendar structure}}The cycle of collective celebration is “{{festivals}}.” {{if festivals contains No common festival calendar exists}}The following celebration belongs to one locality rather than every congregation.{{else}}A representative celebration within that cycle is described below.{{end}} Its occasion is “{{table:Sacred calendar}},” and a characteristic custom is {{table:Festival custom}}. {{chance 60}}The authority to announce the date rests on “{{table:Religious calendar authority}}.”{{end}}
 
 The treatment of children and initiation is “{{table:Children and initiation}}.” Marriage is understood through “{{table:Marriage theology}}.” A significant ritual moment in an individual's life is “{{table:Ritual life cycle}}.”
 
-{{chance 45}}A ceremony renewing collective obligations follows “{{table:Religious covenant renewal}}.” The associated understanding of oaths is “{{table:Oath and covenant}}.”{{end}}
+{{if covenant_detail != extended}}{{chance 45}}A ceremony renewing collective obligations follows “{{table:Religious covenant renewal}}.” The associated understanding of oaths is “{{table:Oath and covenant}}.”{{end}}{{end}}
+
+{{if covenant_detail = extended}}Keeping and renewing obligations is a defining concern. A representative renewal follows “{{table:Religious covenant renewal}}.” Oaths are understood through “{{table:Oath and covenant}},” and their meaning is interpreted in light of the membership rules already stated.{{end}}
 
 DEATH AND WHAT FOLLOWS
 
@@ -135,21 +175,25 @@ DEATH AND WHAT FOLLOWS
 
 {{if afterlife contains Souls are reborn}}The doctrine of return is further explained through “{{table:Rebirth doctrine}}.”{{else}}{{if afterlife contains No authoritative teaching on death}}The tradition preserves funerary obligations without claiming a binding map of an afterlife. Private speculation should not be mistaken for doctrine.{{else}}{{if afterlife contains Ancestors remain nearby}}Relations with the nearby dead are described by “{{table:Ancestor relationship}}.”{{else}}{{if afterlife contains The dead become advisers to their descendants}}Ancestral advice is situated within “{{table:Ancestor relationship}}.”{{else}}{{chance 65}}A story of the dead person's passage includes the detail {{table:Afterlife passage}}.{{end}}{{end}}{{end}}{{end}}{{end}}
 
-{{chance 65}}MAGIC, VISIONS, AND EXTRAORDINARY EXPERIENCE
+{{if ancestors_detail = extended}}Remembering earlier generations is a major strand of religious life. {{if afterlife contains No authoritative teaching on death}}This concerns memory, inherited obligations, and funerary care; it does not establish an official doctrine of surviving ancestral spirits.{{else}}Commemoration and obligations to predecessors are interpreted through the teaching already stated—“{{afterlife}}”—rather than supplying a second account of the dead.{{end}}{{end}}
 
-{{roll magic = Magic and religion}}The boundary between religion and magic is stated as “{{magic}}.”
+{{pick magic_module = omitted | brief | full}}{{if mystic_detail = extended}}{{pick magic_module = full}}{{end}}{{if magic_module != omitted}}MAGIC, VISIONS, AND EXTRAORDINARY EXPERIENCE
+
+{{roll magic = Magic and religion}}The boundary between religion and magic is stated as “{{magic}}.”{{if magic_module != brief}}
 
 {{if magic contains The tradition rejects supernatural technique}}Divination is not assigned as an authorized supernatural technique.{{else}}{{if magic contains Magic is forbidden as coercion of the divine}}A historically reported divinatory practice, whose permissibility is questioned, is “{{table:Divination method}}.”{{else}}{{chance 60}}A form of divination used in this setting is “{{table:Divination method}}.”{{end}}{{end}}{{end}}
 
 {{if magic contains The tradition rejects supernatural technique}}No authorized spellcasting practice is attributed to this tradition. Reports of unusual events are interpreted or disputed without making technique a religious requirement.{{else}}{{if magic contains Magic is forbidden as coercion of the divine}}The tradition distinguishes reverence from an attempt to compel the sacred. An accusation of forbidden technique can generate the dispute {{table:Authority dispute}}.{{else}}{{if magic contains Magic is treated as a morally neutral craft}}Magical skill does not itself demonstrate holiness. Its acceptability depends on use, obligation, and consequences.{{else}}{{chance 70}}A reported miracle is of the kind “{{table:Miracle tradition}}.” Its limitation is {{table:Miracle limitation}}.{{end}}{{end}}{{end}}{{end}}
 
+{{if mystic_detail = extended}}Unusual experience receives sustained attention, but the rule already stated—“{{magic}}”—sets its limits. Training may concern attention, interpretation, or restraint; an emphasis on experience does not itself authorize a forbidden technique.{{end}}
+
 {{chance 60}}Religious care for illness is described as “{{table:Religious healing}}.”{{end}}
 
-{{chance 60}}{{roll possession = Possession theology}}The teaching about possession is “{{possession}}.” {{if possession contains Possession is forbidden}}No authorized possession ceremony is supplied. The response to unwanted influence is “{{table:Exorcism and protection}}.”{{else}}{{if possession contains Possession is a metaphor for inspiration}}The language of possession should not automatically be interpreted as a spirit literally inhabiting a body.{{else}}{{if possession contains Possession is dangerous and requires containment}}The protective response is “{{table:Exorcism and protection}}.”{{else}}{{chance 50}}A practice associated with extraordinary experience is “{{table:Ecstatic worship}}.”{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}
+{{chance 60}}{{roll possession = Possession theology}}The teaching about possession is “{{possession}}.” {{if possession contains Possession is forbidden}}No authorized possession ceremony is supplied. The response to unwanted influence is “{{table:Exorcism and protection}}.”{{else}}{{if possession contains Possession is a metaphor for inspiration}}The language of possession should not automatically be interpreted as a spirit literally inhabiting a body.{{else}}{{if possession contains Possession is dangerous and requires containment}}The protective response is “{{table:Exorcism and protection}}.”{{else}}{{chance 50}}A practice associated with extraordinary experience is “{{table:Ecstatic worship}}.”{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}
 
-{{chance 40}}THE INNER TEACHING
+{{pick secrecy_module = omitted | brief | full}}{{if learning_detail = extended}}{{pick secrecy_module = full}}{{end}}{{if secrecy_module != omitted}}THE INNER TEACHING
 
-{{roll secrecy = Sacred secrecy}}The tradition's rule about restricted knowledge is “{{secrecy}}.” {{if secrecy contains All teachings are public}}No hidden doctrinal degree is added to this account. Advanced study can still be difficult without being secret.{{else}}A particular initiatory circle is organized as “{{table:Mystery cult structure}}.” An ordeal associated with entry is {{table:Initiation ordeal}}. {{chance 65}}The distinction between public explanation and inner instruction produces a disagreement: {{table:Doctrinal disagreement}}.{{end}}{{end}}{{end}}
+{{roll secrecy = Sacred secrecy}}The tradition's rule about restricted knowledge is “{{secrecy}}.” {{if secrecy_module != brief}}{{if secrecy contains All teachings are public}}No hidden doctrinal degree is added to this account. Advanced study can still be difficult without being secret.{{else}}A particular initiatory circle is organized as “{{table:Mystery cult structure}}.” An ordeal associated with entry is {{table:Initiation ordeal}}. {{chance 65}}The distinction between public explanation and inner instruction produces a disagreement: {{table:Doctrinal disagreement}}.{{end}}{{end}}{{end}}{{end}}
 
 LIVELIHOOD, GIFTS, AND PUBLIC WORKS
 
@@ -157,13 +201,15 @@ LIVELIHOOD, GIFTS, AND PUBLIC WORKS
 
 {{if giving contains Only labor may be donated}}The community's support takes the form of work rather than a cash tithe. The obligation attached to its religious institutions is {{table:Temple obligation}}.{{else}}{{if giving contains Sacred gifts circulate rather than accumulate}}Custody is distinguished from permanent ownership. A concrete obligation that keeps gifts moving is {{table:Temple obligation}}.{{else}}{{if giving contains Wealth itself is considered spiritually suspect}}An impressive treasury can be an embarrassment rather than evidence of favor. A resulting dispute concerns {{table:Authority dispute}}.{{else}}{{chance 65}}The support of sanctuaries follows “{{table:Temple patronage}}.” An associated obligation is {{table:Temple obligation}}.{{end}}{{end}}{{end}}{{end}}
 
-{{chance 45}}The tradition's position toward tools, invention, and inherited craft is “{{table:Religion and technology}}.” Its stance toward the living environment is “{{table:Religion and ecology}}.”{{end}}
+{{if service_detail != brief}}{{chance 45}}The tradition's position toward tools, invention, and inherited craft is “{{table:Religion and technology}}.” Its stance toward the living environment is “{{table:Religion and ecology}}.”{{end}}
 
 {{chance 60}}A particular local institution finances its work through “{{table:Religious economy}}.” This is an example of institutional practice rather than a new universal rule of giving.{{end}}
 
+{{end}}
+
 RULERS, LAW, AND VIOLENCE
 
-{{roll government = Religion and government}}{{roll war = Religious warfare}}The relation of religious institutions to civil government is “{{government}}.” The teaching about warfare is “{{war}}.”
+{{roll government = Religion and government}}{{roll war = Religious warfare}}The relation of religious institutions to civil government is “{{government}}.” The teaching about warfare is “{{war}}.” {{if government contains Priest-ruler}}Civil authority gives this tradition a state institution alongside the {{scale}} through which ordinary participation is organized.{{else}}{{if government contains Rulers require ritual confirmation}}Rulership draws on religious legitimacy without making every congregation an office of the state.{{end}}{{end}}
 
 {{if government contains Religion excluded from office}}Religious participation does not confer a right to hold civil office in this arrangement. A possible form of dissent is “{{table:Religious political dissent}}.”{{else}}{{if government contains Rulers require ritual confirmation}}The theory of legitimate government is “{{table:Religious political legitimacy}}.” The ritual interpretation of rulership is “{{table:Sacred kingship}}.”{{else}}{{if government contains Priest-ruler}}Religious and civil power meet in the same office. Its claim to legitimacy is “{{table:Religious political legitimacy}}.” A tension that tests that claim is {{table:Political tension}}.{{else}}{{chance 60}}A concrete tension between ruler and religious community is {{table:Political tension}}.{{end}}{{end}}{{end}}{{end}}
 
@@ -189,27 +235,33 @@ INTERNAL DIFFERENCES
 
 {{roll school = Religious internal diversity}}One influential current within the tradition is described as “{{school}}.” Local observance varies according to “{{table:Local religious variation}}.” These are differences within a living tradition, not necessarily evidence of mutually hostile religions.
 
-{{if school contains A lay movement challenges clerical privilege}}The dispute concerns who may speak for the community and who performs the work that sustains it. A concrete contest is {{table:Authority contest}}.{{else}}{{if school contains A reformist sect rejects wealth}}The dispute centers on the use of religious resources. Its social consequence is {{table:Social consequence}}.{{else}}{{if school contains A philosophical school interprets myths allegorically}}A story that other worshipers read more literally is understood through {{table:Mythic interpretation}}.{{else}}{{chance 60}}A particular disagreement concerns {{table:Doctrinal disagreement}}.{{end}}{{end}}{{end}}{{end}}
+{{if cohesion = Shared custom}}Common observance supplies a stable center. Differences of explanation need not demand separate institutions.{{else}}{{if cohesion = Friendly diversity}}Different customs are recognized as ordinary features of belonging; visiting another congregation can be an occasion for curiosity rather than suspicion.{{else}}{{if cohesion = Negotiated coexistence}}Communities preserve distinct practices through working agreements. When boundaries need attention, they use “{{table:Sacred conflict}}.”{{else}}Public disagreements are unusually visible. A recognized way of handling them is “{{table:Religious dispute mechanism}}.”{{end}}{{end}}{{end}}
+
+{{if school contains A lay movement challenges clerical privilege}}The dispute concerns who may speak for the community and who performs the work that sustains it. A concrete contest is {{table:Authority contest}}.{{else}}{{if school contains A reformist sect rejects wealth}}The dispute centers on the use of religious resources. Its social consequence is {{table:Social consequence}}.{{else}}{{if school contains A philosophical school interprets myths allegorically}}A story that other worshipers read more literally is understood through {{table:Mythic interpretation}}.{{else}}{{if cohesion = Open disagreement}}A particular disagreement concerns {{table:Doctrinal disagreement}}.{{end}}{{end}}{{end}}{{end}}
 
 {{chance 65}}A second locality illustrates the range of practice: {{table:Local religious divergence}}.{{end}}
 
-{{chance 55}}A lasting division developed around “{{table:Heresy and schism}}.” Its immediate cause was {{table:Schism cause}}. A subsequent attempt at handling the division followed “{{table:Religious dispute mechanism}}.”{{else}}Differences have so far remained within a shared community. A recognized means of handling them is “{{table:Sacred conflict}}.”{{end}}
+{{if era = Fragmentation}}A lasting division developed around “{{table:Heresy and schism}}.” Its immediate cause was {{table:Schism cause}}. A subsequent attempt at handling the division followed “{{table:Religious dispute mechanism}}.”{{else}}{{if cohesion = Open disagreement}}{{chance 30}}A lasting division developed around “{{table:Heresy and schism}}.” Its immediate cause was {{table:Schism cause}}. A subsequent attempt at handling the division followed “{{table:Religious dispute mechanism}}.”{{end}}{{end}}{{end}}
 
 THE PRESENT GENERATION
 
 {{chance 35}}In a persecuted region, the immediate pressure is “{{table:Religious persecution}}.” The situation belongs to that region rather than every place where the tradition is practiced. {{chance 60}}A particular political response is “{{table:Religious political dissent}}.”{{end}}
 
-{{end}}{{chance 50}}A current reform movement is described as “{{table:Religious reform}}.” Its proposals meet the institutional response {{table:Institutional response}}.{{else}}{{chance 50}}A community in decline faces “{{table:Religious decline}}.” This describes a particular institution or region, not the disappearance of every local practice.{{else}}A revival is gathering around “{{table:Religious revival}}.” Its local consequences include {{table:Social consequence}}.{{end}}{{end}}
+{{end}}{{if era = Continuity}}The present generation mostly maintains inherited forms. Its important work is ordinary transmission: training successors, keeping observances, and caring for shared places. No general reform or collapse defines this period.{{else}}{{if era = Quiet adaptation}}Small adjustments accumulate through ordinary practice rather than a single reforming manifesto. A local example is {{table:Local religious variation}}.{{else}}{{if era = Recent foundation}}The tradition has only recently taken its present organized form. Older stories and customs may predate it, but common routines are still being established.{{else}}{{if era = Renewal}}A revival is gathering around “{{table:Religious revival}}.” {{chance 45}}One reform proposal is “{{table:Religious reform}}.”{{end}}{{else}}{{if era = Contraction}}Some institutions are withdrawing or losing participants: “{{table:Religious decline}}.” Household practices may outlast the institutions that once supported them.{{else}}{{if era = Dormancy}}Public activity is intermittent. Memories, custodians, and surviving customs preserve the possibility of renewed observance without requiring an active revival.{{else}}{{if era = Fragmentation}}Different communities are increasingly organizing their own affairs. The division described above matters more than a single shared center.{{else}}Participation is spreading beyond earlier communities. The means of expansion is “{{table:Mission and expansion}}”; new members learn established practices while adapting them to unfamiliar circumstances.{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}
 
-A crisis brings the tradition's priorities into public view. Its characteristic response is “{{table:Religious crisis response}}.” This provides a concrete situation in which its ethics, resources, authority, and internal differences can matter in play.
+{{chance 35}}A current pressure tests these arrangements. The community's response is “{{table:Religious crisis response}}.”{{else}}No exceptional crisis defines this snapshot; ordinary obligations are sufficient to bring its priorities into view.{{end}}
 
 {{chance 65}}LOCAL WINDOWS FOR PLAY
 
 The following are independent local situations. They can be placed in different settlements rather than forced into one representative temple.
 
-{{repeat 3}}One community: {{table:Popular devotion}}. The practical complication is {{table:Practice and exception}}. A dispute or choice arises from {{table:Moral dilemma}}.
+One community: {{table:Popular devotion}}. {{chance 35}}A practical complication is {{table:Practice and exception}}.{{end}}
 
-{{end}}{{end}}{{chance 35}}A FURTHER LOCAL FACET
+{{chance 65}}Another community: {{table:Household devotion}}.{{end}}
+
+{{chance 35}}A third locality faces a choice: {{table:Moral dilemma}}.{{end}}
+
+{{end}}{{chance 35}}A FURTHER LOCAL FACET
 
 For an additional community or historical period, a facet selected for exploration is {{table:Religion facet selector}}. This is a separate local account, not a revision of the established doctrine above; incompatible practices belong to that community or period.
 

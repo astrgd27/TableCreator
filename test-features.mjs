@@ -30,3 +30,15 @@ const mcp=await (await post('/mcp',{jsonrpc:'2.0',id:1,method:'tools/call',param
 assert.equal((await post('/api/generate',{directory:data,request:{type:'template',id:'bad'}})).status,400);
 const bad=await (await post('/mcp',{jsonrpc:'2.0',id:2,method:'tools/call',params:{name:'generate',arguments:{directory:data,request:{type:'template',id:'bad'}}}})).json();assert.equal(bad.result.isError,true);
 console.log('PASS: template branching, skipped rolls, 500-roll narratives, limits, directory replacement atomicity, full export/import, merge remapping, engine parity, HTTP auth and MCP results.');
+
+// Reusable literal choices, sampling without replacement, and a required earlier choice.
+const pickSource='{{pick core = Ancestors}}{{pick themes 2..4 with core = Ritual | Ancestors | Learning | Service}}{{themes}}';
+const picked=a.runTemplate({source:pickSource});assert.equal(picked.text,'Ancestors, Ritual');assert.equal(picked.rollCount,0);
+for(const source of ['{{pick x 0 = A}}','{{pick x 3 = A | B}}','{{pick x 2..1 = A | B}}','{{pick x = A | a}}','{{pick x = A | }}'])assert.throws(()=>a.parseTemplate(source),/Pick/);
+assert.throws(()=>a.runTemplate({source:'{{pick x with missing = A | B}}'}),/assigned/);
+assert.throws(()=>a.runTemplate({source:'{{pick core = Z}}{{pick x with core = A | B}}'}),/not an option/);
+vm.runInContext('randomInt=n=>n-1',box);assert.equal(a.runTemplate({source:pickSource}).text,'Ancestors, Service, Learning, Ritual');
+const pickData=structuredClone(data);pickData.templates=[{id:'p',name:'Picks',source:'{{pick theme = A}}{{if theme = A}}works{{end}}'}];
+assert.equal(createEngine(pickData).generate({type:'template',id:'p'}).text,'works');
+const pickHttp=await post('/api/generate',{directory:pickData,request:{type:'template',id:'p'}});assert.equal((await pickHttp.json()).text,'works');
+console.log('PASS: reusable choices, unique sampling, required themes, bounds, invalid inputs and HTTP engine parity.');

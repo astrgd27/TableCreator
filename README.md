@@ -56,3 +56,9 @@ Tables roll in their listed order. Parent choices are available to their sub-tab
 The new Templates screen creates paragraph-based narratives. Use inline table rolls, named reusable results, condition/else blocks, percentage-chance blocks, repeat blocks, and dice. Choose **Fantasy religion — full dossier** under `default/religion` for a complete working narrative template. Template edits save automatically, including drafts with syntax errors; errors appear when generating. Template table bindings survive table renames. Saved templates and their bindings travel with directory exports and merge imports.
 
 For AI tool access and a self-hostable backend, see [API.md](API.md).
+
+### Reusable template choices
+
+`{{pick emphasis = Ritual | Learning | Service}}` silently stores one uniformly chosen literal option. `{{emphasis}}` displays it; ordinary `if` blocks can use it.
+
+`{{pick themes 2..3 with emphasis = Ritual | Learning | Service}}` chooses a uniform count from 2 through 3, samples distinct options without replacement, and includes the previously assigned `emphasis`. Omit `with emphasis` for an unconstrained sample. Results are comma-separated strings; `contains` can check an individual theme. Options cannot contain `|` or template delimiters; avoid overlapping labels when using `contains`. One literal option also assigns a fixed value. Lists allow up to 100 unique, nonempty options. Choices are exposed in the generated `variables` object and do not count as table expansions.

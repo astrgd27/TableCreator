@@ -68,3 +68,9 @@ The Worker in `backend/worker.mjs` can run behind an authenticated platform. Whe
 ## Limits
 
 Requests: 10 MB. Directory: 500 tables, 100 saved generators, 200 templates. Templates: 200,000 source characters, 5,000 table expansions, 1,000 repeats per block, 20 nested blocks, 30,000 execution steps, and 1 MB narrative output. Expansion limits stop recursive or excessive content. Skipped template branches consume no table rolls.
+
+### Reusable template choices
+
+`{{pick emphasis = Ritual | Learning | Service}}` silently stores one uniformly chosen literal option. `{{emphasis}}` displays it; ordinary `if` blocks can use it.
+
+`{{pick themes 2..3 with emphasis = Ritual | Learning | Service}}` chooses a uniform count from 2 through 3, samples distinct options without replacement, and includes the previously assigned `emphasis`. Omit `with emphasis` for an unconstrained sample. Results are comma-separated strings; `contains` can check an individual theme. Options cannot contain `|` or template delimiters; avoid overlapping labels when using `contains`. One literal option also assigns a fixed value. Lists allow up to 100 unique, nonempty options. Choices are exposed in the generated `variables` object and do not count as table expansions.
