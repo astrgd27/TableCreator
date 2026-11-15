@@ -1,157 +1,24 @@
-RELIGION WORLDBUILDER — COMPARATIVE & FANTASY EDITION
+# Religion Worldbuilder — variety-expanded edition
 
-322 CSV tables, 4186 total weighted outcomes.
+Source: Religion_Worldbuilder_Variety_Expanded(1).zip supplied by the user.
 
-This extends the previous 90-table religion collection without removing its entries.
-It also includes the latest deity appearance tables and the 50 religion domains.
+- 322 tables; no added or renamed tables.
+- 12,472 weighted entries.
+- 6,338 sub-table links, all resolved to existing tables.
+- Folder: `default/religion`.
 
-NEW: 103 independent religion facets, each with a 12-outcome primary table
-and 12-outcome nuance subtable; 12 cross-cutting follow-up tables;
-and a Religion facet selector table for rolling an area to explore.
+## Replacement update
 
-FORMAT: text,weight,subtable (UTF-8 with BOM for compatibility).
-Import all CSV files into the same directory. Subtable values are exact table
-names without .csv. A blank subtable ends that branch.
+Version 2 overwrites the bundled religion rows on the next app load. Existing table IDs are reused where possible so saved generators and references remain valid. Missing bundled tables are restored. Other folders are not replaced. Successful installation is recorded so subsequent reloads do not overwrite later edits. A storage failure leaves the previous directory intact.
 
-HOW TO GENERATE A RELIGION
-1. Start with Ultimate reality, Divine plurality, Religious centrality,
-   Religious identity, and Religious exclusivity. These can be rolled independently.
-2. Add cosmology, salvation, afterlife, sacred time, spirit ecology, and myth.
-3. Roll organization, scripture, interpretation, law, ritual, and sacred spaces.
-4. Roll lived practice: diet, family, healing, art, music, charity, and economy.
-5. Roll internal diversity, diaspora, syncretism, dissent, and historical change.
-6. For each primary result, optionally roll its linked nuance; some nuances
-   trigger a further follow-up. Reroll incompatible combinations or interpret
-   them as the beliefs of competing sects.
+The default religion dossier is replaced with its version 2 source. The old Settlement narrative test template and its Add monarchy example button are removed. Explicit full-directory imports continue to mean the imported directory is authoritative.
 
-IMPORTANT: This is a fictional combinatorial generator, not an authoritative
-model of any real religion. Religious traditions are internally diverse and
-historically situated. Avoid treating any randomly generated result as an
-accurate description of an existing community.
+## Full religion dossier
 
-DESIGN PRINCIPLES
-- Non-theistic, monotheistic, polytheistic, monolatrous, henotheistic,
-  animistic, ancestor-centered and philosophical paths are possible.
-- Belief, membership, practice, salvation, clergy, and exclusivity are
-  independent dimensions, not mandatory features of all religions.
-- Contradictory results can be used to model sectarian or regional diversity.
-- Fantasy species, divine embodiment, monsters, magic and sacred geography
-  are available without forcing every religion to use them.
+The template references 176 tables directly. Traversing their positive-weight sub-table links reaches all 322 tables. Conditional branches and chance-based passages mean an individual religion does not roll every table.
 
-NEW PRIMARY FACETS
-- Ultimate reality
-- Divine plurality
-- Divine accessibility
-- Religious centrality
-- Religious exclusivity
-- Revelation source
-- Religious founder
-- Founding circumstance
-- Religious identity
-- Conversion practice
-- Sacred language
-- Sacred text status
-- Interpretive tradition
-- Religious law
-- Sin and wrongdoing
-- Purity and pollution
-- Fasting and abstinence
-- Dietary religion
-- Sacred time
-- Eschatology
-- Salvation or liberation
-- Spiritual anthropology
-- Rebirth doctrine
-- Ancestor relationship
-- Spirit ecology
-- Sacred animal relationship
-- Sacred landscape
-- Cosmic geography
-- Divine hierarchy
-- Divine gender
-- Divine embodiment
-- Sacred image policy
-- Temple patronage
-- Monastic organization
-- Religious vocation
-- Lay and clerical distinction
-- Prophetic authority
-- Mystical discipline
-- Ecstatic worship
-- Possession theology
-- Religious healing
-- Exorcism and protection
-- Oath and covenant
-- Sacred kingship
-- Religious political dissent
-- Religious warfare
-- Marriage theology
-- Gender and religious roles
-- Children and initiation
-- Education and scholarship
-- Religious music
-- Ritual clothing
-- Sacred art tradition
-- Religious architecture
-- Relic theology
-- Saint and hero veneration
-- Festival calendar structure
-- Local religious variation
-- Religious syncretism
-- Religious diaspora
-- Mission and expansion
-- Religious persecution
-- Religious reform
-- Religious decline
-- Religious revival
-- Mystery cult structure
-- Sacred secrecy
-- Sacrifice theology
-- Religious charity
-- Pilgrimage geography
-- Ritual life cycle
-- Religious dispute mechanism
-- Cosmic adversary
-- Magic and religion
-- Religious cosmopolitanism
-- Religious aesthetics
-- Religion and trade
-- Religion and ecology
-- Religion and technology
-- Religious social rank
-- Religious ethics of violence
-- Religious economics of giving
-- Holy person archetype
-- Religious humor and play
-- Religion and dreams
-- Religion and death ethics
-- Religious boundary with outsiders
-- Religious reconciliation
-- Religious education of doubt
-- Religious contact with otherworld
-- Religious crisis response
-- Religious calendar authority
-- Religious covenant renewal
-- Religious metaphysical paradox
-- Religious practice frequency
-- Religious material culture
-- Religious punishment and restoration
-- Religious transmission
-- Religious encounter with monsters
-- Religious contact with nonhumans
-- Religious sacred geography network
-- Religious political legitimacy
-- Religious internal diversity
+New passages cover divination, aesthetics, economic arrangements, education, membership, metaphysical puzzles, ritual clothing, sacred animals, sacred objects, saint/hero veneration, and an optional separately identified local facet. This last passage uses the facet selector without replacing the main account's doctrine.
 
+Named rolls drive later conditions and remain stable within an output. Primary results retain their linked nuances. Incompatible local details are explicitly distinguished from universal doctrine. Generated accounts remain fictional worldbuilding prompts and may need editorial reconciliation.
 
-Installed under `default/religion`. All named sub-table links resolve to internal IDs.
-
-## Fantasy religion — full dossier
-
-The Templates screen includes a large narrative template under `default/religion`, installed once without replacing existing templates. Its editable source is `fantasy-religion-template.txt`.
-
-The template references 165 existing tables. It defines identity, origins, divine plurality, representation, teaching, ethics, worship, office, sacred places, festivals, family, death, economics, politics, and internal differences. Chance-based sections add monastic life, magic, mysteries, diaspora, otherworld contact, persecution, reform, decline/revival, and local situations. Named rolls drive nested conditions so forbidden or absent institutions are not elaborated by those branches. Reused rolls remain stable within one output.
-
-Primary table rolls retain their linked nuance sub-tables. Arrows denote those inherited qualifications; the template explicitly distinguishes these from universal doctrine. It is a fantasy worldbuilding scaffold, not a guarantee that all independently generated customs are mutually consistent or representative of a real religion. Typical dossiers contain about 3,000 words and approximately 200 total table expansions, varying by selected branches.
-
-The template's dependency references bind to the user's installed table IDs, survive renaming, and are included in directory exports for the AI companion. Installation never overwrites an edited template and does not repeat after a deliberate deletion or full directory replacement.
+Regression tests verify all-table reachability, missing references, branch suppression, random dossier generation, replacement of old entries/templates, retained IDs, one-time migrations, and rollback on storage failure.

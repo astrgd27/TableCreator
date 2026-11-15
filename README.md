@@ -53,6 +53,6 @@ Tables roll in their listed order. Parent choices are available to their sub-tab
 
 ### Templates
 
-The new Templates screen creates paragraph-based narratives. Use inline table rolls, named reusable results, condition/else blocks, percentage-chance blocks, repeat blocks, and dice. Click **Add monarchy example** for a complete working settlement description. Template edits save automatically, including drafts with syntax errors; errors appear when generating. Template table bindings survive table renames. Saved templates and their bindings travel with directory exports and merge imports.
+The new Templates screen creates paragraph-based narratives. Use inline table rolls, named reusable results, condition/else blocks, percentage-chance blocks, repeat blocks, and dice. Choose **Fantasy religion — full dossier** under `default/religion` for a complete working narrative template. Template edits save automatically, including drafts with syntax errors; errors appear when generating. Template table bindings survive table renames. Saved templates and their bindings travel with directory exports and merge imports.
 
 For AI tool access and a self-hostable backend, see [API.md](API.md).

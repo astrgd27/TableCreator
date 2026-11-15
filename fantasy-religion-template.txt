@@ -13,6 +13,8 @@ Belonging is understood in these terms: “{{identity}}.” Its position toward 
 
 {{if exclusivity contains Only this tradition is true}}Teachers distinguish the truth of their doctrine from the permitted treatment of outsiders. The actual rule of contact is “{{table:Religious boundary with outsiders}}.”{{else}}{{if exclusivity contains Multiple paths are equally valid}}Recognition of other paths does not eliminate disputes over local practice. One example is {{table:Interreligious encounter}}.{{else}}{{if exclusivity contains Membership excludes competing rites}}Joining another rite can become a question of loyalty, even when neighbors remain on friendly terms. A disputed boundary is {{table:Membership boundary}}.{{end}}{{end}}{{end}}
 
+{{chance 65}}Practical membership arrangements are “{{table:Religious membership}}.” Where these differ from the identity stated above, they describe access to a particular congregation or rite rather than a replacement for the tradition’s broader identity.{{end}}
+
 ORIGINS AND REMEMBERED HISTORY
 
 {{roll founder = Religious founder}}{{roll founding = Founding circumstance}}{{roll revelation = Revelation source}}The remembered origin centers on “{{founder}}.” The circumstances in which the tradition took shape are “{{founding}}.” Its account of the source of religious knowledge is “{{revelation}}.”
@@ -35,13 +37,17 @@ The public account of divine plurality is “{{plurality}}.”
 
 {{chance 40}}A teaching about the course of sacred history holds that “{{table:Sacred time}}.” The expectation concerning the world's ultimate fate is “{{table:Eschatology}}.”{{end}}
 
+{{chance 40}}A speculative teaching, preserved as a puzzle rather than a second binding creed, states “{{table:Religious metaphysical paradox}}.”{{end}}
+
 IMAGES, SYMBOLS, AND MATERIAL PRESENCE
 
 {{roll images = Sacred image policy}}The rule governing sacred representation is “{{images}}.”
 
-{{if images contains All sacred depiction is prohibited}}No authorized portrait, sacred emblem, or representational shrine image is supplied here. Reverence is instead expressed through conduct, spoken teaching, and the use or deliberate absence of material objects. Disputes concern what counts as depiction rather than which portrait is correct.{{else}}{{if images contains Depictions of the supreme power are forbidden}}The supreme power is not given an authorized visible form. A permitted emblem used around its worship is {{table:Symbolic deity}} The emblem refers to a teaching or obligation rather than depicting the forbidden subject.{{else}}{{if images contains Only abstract symbols are allowed}}The principal emblem is {{table:Symbolic deity}} Worshipers read it through the tradition's central concern, {{domain}}, rather than treating it as a literal portrait.{{else}}{{if plurality contains No gods are acknowledged}}No deity portrait is required. The visual vocabulary is described by “{{table:Sacred art tradition}},” and an everyday religious object is “{{table:Religious material culture}}.”{{else}}{{if plurality contains The existence of gods is deliberately undecided}}An emblem can mark a shared practice without resolving the existence of its subject. One such emblem is {{table:Symbolic deity}}{{else}}{{if plurality contains Spirits are revered without being called gods}}A representative spirit may be portrayed in the following form: {{table:Deity appearance}}. Here the appearance table supplies the form of a revered spirit, not a claim that the tradition recognizes a god.{{else}}An account of the principal sacred figure's appearance gives the following description: {{table:Deity appearance}}. Where that account refuses depiction, this is an exception within the broader image policy rather than an instruction to draw a forbidden figure.{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}
+{{if images contains No sacred images are permitted}}No authorized portrait, sacred emblem, or representational shrine image is supplied here. Reverence is instead expressed through conduct, spoken teaching, and the use or deliberate absence of material objects. Disputes concern what counts as depiction rather than which portrait is correct.{{else}}{{if images contains All sacred depiction is prohibited}}No authorized portrait, sacred emblem, or representational shrine image is supplied here. Reverence is instead expressed through conduct, spoken teaching, and the use or deliberate absence of material objects. Disputes concern what counts as depiction rather than which portrait is correct.{{else}}{{if images contains Depictions of the supreme power are forbidden}}The supreme power is not given an authorized visible form. A permitted emblem used around its worship is {{table:Symbolic deity}} The emblem refers to a teaching or obligation rather than depicting the forbidden subject.{{else}}{{if images contains Only abstract symbols may represent divinity}}The principal emblem is {{table:Symbolic deity}} Worshipers read it through the tradition's central concern, {{domain}}, rather than treating it as a literal portrait.{{else}}{{if images contains Only abstract symbols are allowed}}The principal emblem is {{table:Symbolic deity}} Worshipers read it through the tradition's central concern, {{domain}}, rather than treating it as a literal portrait.{{else}}{{if plurality contains No gods are acknowledged}}No deity portrait is required. The visual vocabulary is described by “{{table:Sacred art tradition}},” and an everyday religious object is “{{table:Religious material culture}}.”{{else}}{{if plurality contains The existence of gods is deliberately undecided}}An emblem can mark a shared practice without resolving the existence of its subject. One such emblem is {{table:Symbolic deity}}{{else}}{{if plurality contains Spirits are revered without being called gods}}A representative spirit may be portrayed in the following form: {{table:Deity appearance}}. Here the appearance table supplies the form of a revered spirit, not a claim that the tradition recognizes a god.{{else}}An account of the principal sacred figure's appearance gives the following description: {{table:Deity appearance}}. Where that account refuses depiction, this is an exception within the broader image policy rather than an instruction to draw a forbidden figure.{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}{{end}}
 
 {{if images contains Sacred images are ritually awakened}}The act of awakening distinguishes a religious presence from an ordinary crafted object. A practical complication attending that rite is {{table:Ritual complication}}.{{else}}{{if images contains Different sects disagree about images}}Images are a living dispute rather than a settled aesthetic preference. One argument between the schools is {{table:Doctrinal disagreement}}.{{else}}{{if images contains Images are destroyed after festivals}}The impermanence of the image is part of its use. A local material variation is {{table:Sacred material variation}}.{{end}}{{end}}{{end}}
+
+{{chance 65}}The wider religious aesthetic is “{{table:Religious aesthetics}}.” Clothing used for religious occasions follows “{{table:Ritual clothing}}.”{{end}}
 
 TEACHING, MEMORY, AND DOUBT
 
@@ -52,6 +58,8 @@ TEACHING, MEMORY, AND DOUBT
 {{if scripture contains An open canon accepts new revelations}}An open canon makes recognition of a new teaching a continuing political and religious decision. A current controversy is {{table:Scriptural controversy}}.{{else}}{{if scripture contains Several competing canons coexist}}A dispute between the canons turns on {{table:Scriptural controversy}}.{{else}}{{chance 45}}A difficult passage has become controversial: {{table:Scriptural controversy}}.{{end}}{{end}}{{end}}{{end}}{{end}}
 
 {{if prophecy contains No prophetic institution exists}}There is no prophetic office whose pronouncement automatically settles a dispute.{{else}}{{if prophecy contains Prophecy ended with the founder}}New revelations are judged against a closed age of prophecy rather than automatically added to its authority.{{else}}{{if prophecy contains Prophecy is distrusted as political manipulation}}A claim of revelation may provoke investigation instead of obedience. The practical dispute is {{table:Authority dispute}}.{{else}}{{chance 55}}An omen or oracle is interpreted under the rule {{table:Omen interpretation}}.{{end}}{{end}}{{end}}{{end}}
+
+{{chance 60}}The organization of religious education is “{{table:Religious education}}.”{{end}}
 
 The place of questioning in religious education is “{{table:Religious education of doubt}}.” {{chance 65}}A community teaches its young through “{{table:Education and scholarship}}.”{{end}}
 
@@ -95,6 +103,10 @@ Religious rank is governed by “{{table:Religious social rank}}.” Access to r
 
 {{roll monastic = Monastic organization}}The place of monastic life is “{{monastic}}.” {{if monastic contains No monastic institution exists}}There is no monastery or monastic order in this account. Private discipline can still exist, but it is not assigned an institutional rule, estate, or chain of abbots.{{else}}A discipline practiced within this setting is “{{table:Mystical discipline}}.” {{chance 65}}The kind of exemplary person associated with it is “{{table:Holy person archetype}}.”{{end}} {{if monastic contains Monastic orders compete over interpretation}}A concrete point of disagreement is {{table:Doctrinal disagreement}}.{{else}}{{if monastic contains Vows are temporary}}Returning to household life can be an expected completion of the discipline rather than a betrayal of it.{{else}}{{if monastic contains Monastics may marry}}Marriage is not treated as evidence that a practitioner has abandoned this form of religious life.{{end}}{{end}}{{end}}{{end}}{{end}}
 
+{{chance 65}}EXEMPLARY LIVES
+
+{{roll saints = Saint and hero veneration}}The treatment of exemplary human lives follows “{{saints}}.” {{if saints contains Veneration of humans is forbidden}}No saintly intercessor or human cult is assumed; remembered lives may still serve as ethical examples.{{else}}{{chance 60}}A representative exemplary figure is “{{table:Holy person archetype}}.”{{end}}{{end}}{{end}}
+
 SANCTUARIES AND SACRED LANDSCAPE
 
 {{roll geography = Religious sacred geography network}}Sacred places relate to one another through “{{geography}}.” The religious understanding of landscape is “{{table:Sacred landscape}}.” A representative holy place is “{{table:Sacred site}},” distinguished locally by the feature {{table:Shrine feature}}.
@@ -104,6 +116,10 @@ SANCTUARIES AND SACRED LANDSCAPE
 {{chance 65}}Pilgrimage is directed toward “{{table:Pilgrimage geography}}.” A representative journey takes the form “{{table:Pilgrimage tradition}}.” The difficulty most often remembered by travelers is {{table:Pilgrimage obstacle}}.{{end}}
 
 {{chance 65}}{{roll relics = Relic theology}}The tradition's treatment of relics is “{{relics}}.” {{if relics contains The tradition has no relics}}No relic collection is assigned to the sanctuary.{{else}}{{if relics contains Relics are forbidden as idolatrous}}No relic is authorized as an object of veneration. Claims of possessing one can instead become an accusation against a rival community.{{else}}A representative relic has this provenance: {{table:Relic provenance}}. {{chance 40}}Its local custody has the social consequence {{table:Social consequence}}.{{end}}{{end}}{{end}}{{end}}
+
+{{chance 55}}A sacred object associated with a local observance is “{{table:Sacred object}}.” Its role is subject to the image policy already stated; it need not depict a being.{{end}}
+
+{{chance 55}}The relationship with animals is “{{table:Sacred animal relationship}}.” This describes a religious obligation or association rather than automatically establishing a deity in animal form.{{end}}
 
 FESTIVALS AND THE LIFE COURSE
 
@@ -123,6 +139,8 @@ DEATH AND WHAT FOLLOWS
 
 {{roll magic = Magic and religion}}The boundary between religion and magic is stated as “{{magic}}.”
 
+{{if magic contains The tradition rejects supernatural technique}}Divination is not assigned as an authorized supernatural technique.{{else}}{{if magic contains Magic is forbidden as coercion of the divine}}A historically reported divinatory practice, whose permissibility is questioned, is “{{table:Divination method}}.”{{else}}{{chance 60}}A form of divination used in this setting is “{{table:Divination method}}.”{{end}}{{end}}{{end}}
+
 {{if magic contains The tradition rejects supernatural technique}}No authorized spellcasting practice is attributed to this tradition. Reports of unusual events are interpreted or disputed without making technique a religious requirement.{{else}}{{if magic contains Magic is forbidden as coercion of the divine}}The tradition distinguishes reverence from an attempt to compel the sacred. An accusation of forbidden technique can generate the dispute {{table:Authority dispute}}.{{else}}{{if magic contains Magic is treated as a morally neutral craft}}Magical skill does not itself demonstrate holiness. Its acceptability depends on use, obligation, and consequences.{{else}}{{chance 70}}A reported miracle is of the kind “{{table:Miracle tradition}}.” Its limitation is {{table:Miracle limitation}}.{{end}}{{end}}{{end}}{{end}}
 
 {{chance 60}}Religious care for illness is described as “{{table:Religious healing}}.”{{end}}
@@ -140,6 +158,8 @@ LIVELIHOOD, GIFTS, AND PUBLIC WORKS
 {{if giving contains Only labor may be donated}}The community's support takes the form of work rather than a cash tithe. The obligation attached to its religious institutions is {{table:Temple obligation}}.{{else}}{{if giving contains Sacred gifts circulate rather than accumulate}}Custody is distinguished from permanent ownership. A concrete obligation that keeps gifts moving is {{table:Temple obligation}}.{{else}}{{if giving contains Wealth itself is considered spiritually suspect}}An impressive treasury can be an embarrassment rather than evidence of favor. A resulting dispute concerns {{table:Authority dispute}}.{{else}}{{chance 65}}The support of sanctuaries follows “{{table:Temple patronage}}.” An associated obligation is {{table:Temple obligation}}.{{end}}{{end}}{{end}}{{end}}
 
 {{chance 45}}The tradition's position toward tools, invention, and inherited craft is “{{table:Religion and technology}}.” Its stance toward the living environment is “{{table:Religion and ecology}}.”{{end}}
+
+{{chance 60}}A particular local institution finances its work through “{{table:Religious economy}}.” This is an example of institutional practice rather than a new universal rule of giving.{{end}}
 
 RULERS, LAW, AND VIOLENCE
 
@@ -189,6 +209,10 @@ The following are independent local situations. They can be placed in different 
 
 {{repeat 3}}One community: {{table:Popular devotion}}. The practical complication is {{table:Practice and exception}}. A dispute or choice arises from {{table:Moral dilemma}}.
 
-{{end}}{{end}}CONTINUITY NOTE
+{{end}}{{end}}{{chance 35}}A FURTHER LOCAL FACET
+
+For an additional community or historical period, a facet selected for exploration is {{table:Religion facet selector}}. This is a separate local account, not a revision of the established doctrine above; incompatible practices belong to that community or period.
+
+{{end}}CONTINUITY NOTE
 
 The central concern remains {{domain}}. Use the public identity, chosen institutions, and explicit prohibitions above as anchors when expanding the setting. Treat a contradictory inherited nuance as a named local exception, historical survival, polemic, or contested claim; do not silently turn it into a second universal doctrine.
