@@ -68,3 +68,11 @@ For AI tool access and a self-hostable backend, see [API.md](API.md).
 Table selection now uses a shared directory picker in single rolls, multiple rolls, meta-combinations, template insertion, entry references, sub-table links, and conditions. Browse one folder level at a time, navigate with breadcrumbs, enter a folder path directly, or search that folder and its descendants. Full table paths distinguish duplicate names. Multiple selections persist while navigating between folders; use Show selected to review them before applying. Cancel leaves the current selection unchanged.
 
 The editor collection uses the same folder hierarchy. New folder creates an empty folder (or nested path), and New table creates a table in the folder currently being viewed. New linked sub-tables inherit their parent's folder. These are directory paths inside Table Forge; full directory exports preserve them. References use stable table IDs so moving a table does not break a template or saved roll.
+
+### Fantasy deity dossier
+
+Select **Fantasy deity - full dossier** in Templates under `default/religion`. It starts with a personal name, one to three distinct domains, appearance, origin, and temperament. The 15 optional cult themes have independent 12–25% inclusion chances, averaging about three brief themed paragraphs. Any theme can be omitted; a short profile alone is possible. Across 400 test runs the mean was approximately 190 words, far shorter than the broader religion dossier.
+
+Two new tables in `default/religion/Divinities and cosmology` supply personal names and portfolios. The portfolio table weights one domain at 45%, two at 45%, and three at 10%; each row is a complete portfolio without repeated domains. Existing religion tables remain unchanged and are all reachable via thematic alternatives or linked sub-tables. Rare alternative accounts are explicitly local/historical. The original religion template remains available.
+
+The new template and its two tables are installed once, atomically. Directory exports include them and work with the existing AI backend; an explicit directory import remains authoritative.

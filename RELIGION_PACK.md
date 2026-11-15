@@ -40,3 +40,9 @@ The 322 tables are assigned to 31 leaf paths under `default/religion`. The 15 ma
 Divinities and cosmology contains a Forms subfolder. Each subject's expanded nuance/complication tables live in its Nuances and complications subfolder. `religion-folders.js` maps the existing canonical table IDs to these paths; it introduces no tables or entries.
 
 Existing installations receive a one-time folder migration. It preserves all existing rows, weights, table IDs, sub-table links, and saved generator references. It refreshes the default religion template's table bindings by canonical identity and persists folders with the directory. User-created unrelated tables are left in place. Fresh installations receive the organized paths immediately. Storage failure rolls back the migration; an explicit directory import remains authoritative.
+
+## Deity companion template
+
+`deity-template.js` / `fantasy-deity-template.txt` add **Fantasy deity - full dossier** beside the religion template. This is a short deity-and-cult account, with a guaranteed profile followed by sparse thematic paragraphs. All 322 original tables are reachable, but typical outputs draw only a small subset. `deity-pack.js` adds 48 personal names and 75 weighted domain portfolios in the existing Divinities and cosmology folder. The supplemental tables use stable bundle keys and do not alter the original 322-table pack or its links.
+
+`test-deity.cjs` checks all-table reachability, 1–3 distinct domains and exact weighting, average length over 400 generations, retention of the religion template, missing-dependency rollback, storage rollback, idempotence, and explicit directory import behavior.
