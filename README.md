@@ -86,3 +86,7 @@ The default deity template always draws one domain and nests continuation chance
 ### Replace a table from a file
 
 In the table editor, choose **Upload & replace** beside **Paste entries**. Select a TXT file (one entry per line), a CSV with `text,weight,subtable` columns, or a JSON containing one table or an entry array. Preview the upload, then choose **Replace table entries**. This replaces all entries, including their weights, conditions, and outgoing links, while retaining the table's name, folder, and ID so existing references keep working. Export the table first if you want a backup. Invalid uploads and storage failures leave the table unchanged; multi-table JSON belongs in Import tables instead.
+
+### Large fantasy deity dossier
+
+**Fantasy deity - full dossier - large** is a separate template under `default/religion`. It preserves the original deity profile and one-to-five unique domain draws, increases the 15 thematic section chances to 42–85%, raises most supporting sentence chances to 50%, and gives each included theme a separate 30% chance of a local or historical detail paragraph. Core descriptions and extra details can now appear together. Existing conditional restrictions still govern sacrifices, clergy, images, secret teachings, and other dependent rolls. The original short dossier and table contents are preserved. Both versions can reach the same religion tables, including linked sub-tables. The large template is installed once and included in directory exports; explicit directory imports remain authoritative.
