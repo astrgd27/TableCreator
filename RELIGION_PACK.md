@@ -5,7 +5,7 @@ Source: Religion_Worldbuilder_Variety_Expanded(1).zip supplied by the user.
 - 322 tables; no added or renamed tables.
 - 12,472 weighted entries.
 - 6,338 sub-table links, all resolved to existing tables.
-- Folder: `default/religion`.
+- Root folder: `default/religion`, organized into subject subfolders.
 
 ## Replacement update
 
@@ -32,3 +32,11 @@ Related topics receive brief, full, or extended treatment. Retreats, exemplary l
 Household, village, itinerant, and regional participation combine with four geographic patterns. Family and occupational membership bias participation; priest-ruler results add state institutions. Four cohesion patterns allow shared custom and friendly diversity as well as negotiation or disagreement. Eight present phases cover continuity, quiet adaptation, recent foundation, renewal, contraction, dormancy, fragmentation, and expansion. Crisis is optional (35%), as are the second and third local examples. Specific table results can still introduce local conflicts.
 
 The table pack is unchanged. Template revision 3 upgrades the prior bundled template once, retaining its ID. Directory replacement remains authoritative. The browser and AI backend use the same extended template engine.
+
+## Folder organization (revision 1)
+
+The 322 tables are assigned to 31 leaf paths under `default/religion`. The 15 main subjects are Identity and belonging; Origins and history; Divinities and cosmology; Teachings and knowledge; Ethics and obligations; Ritual and daily life; Institutions and religious roles; Sacred places and objects; Art and symbols; Festivals and life passages; Death and ancestors; Mysticism and the supernatural; Society and livelihood; Government and conflict; and Communities and diversity.
+
+Divinities and cosmology contains a Forms subfolder. Each subject's expanded nuance/complication tables live in its Nuances and complications subfolder. `religion-folders.js` maps the existing canonical table IDs to these paths; it introduces no tables or entries.
+
+Existing installations receive a one-time folder migration. It preserves all existing rows, weights, table IDs, sub-table links, and saved generator references. It refreshes the default religion template's table bindings by canonical identity and persists folders with the directory. User-created unrelated tables are left in place. Fresh installations receive the organized paths immediately. Storage failure rolls back the migration; an explicit directory import remains authoritative.

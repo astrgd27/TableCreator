@@ -62,3 +62,9 @@ For AI tool access and a self-hostable backend, see [API.md](API.md).
 `{{pick emphasis = Ritual | Learning | Service}}` silently stores one uniformly chosen literal option. `{{emphasis}}` displays it; ordinary `if` blocks can use it.
 
 `{{pick themes 2..3 with emphasis = Ritual | Learning | Service}}` chooses a uniform count from 2 through 3, samples distinct options without replacement, and includes the previously assigned `emphasis`. Omit `with emphasis` for an unconstrained sample. Results are comma-separated strings; `contains` can check an individual theme. Options cannot contain `|` or template delimiters; avoid overlapping labels when using `contains`. One literal option also assigns a fixed value. Lists allow up to 100 unique, nonempty options. Choices are exposed in the generated `variables` object and do not count as table expansions.
+
+### Folder browser
+
+Table selection now uses a shared directory picker in single rolls, multiple rolls, meta-combinations, template insertion, entry references, sub-table links, and conditions. Browse one folder level at a time, navigate with breadcrumbs, enter a folder path directly, or search that folder and its descendants. Full table paths distinguish duplicate names. Multiple selections persist while navigating between folders; use Show selected to review them before applying. Cancel leaves the current selection unchanged.
+
+The editor collection uses the same folder hierarchy. New folder creates an empty folder (or nested path), and New table creates a table in the folder currently being viewed. New linked sub-tables inherit their parent's folder. These are directory paths inside Table Forge; full directory exports preserve them. References use stable table IDs so moving a table does not break a template or saved roll.

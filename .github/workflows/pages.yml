@@ -25,11 +25,12 @@ jobs:
           node test-features.mjs
           node test-religion.cjs
           node test-religion-template.cjs
+          node test-directories.cjs
       - uses: actions/configure-pages@v5
       - name: Prepare static site
         run: |
           mkdir _site
-          cp index.html .nojekyll engine.mjs openapi.json API.md religion-pack.js religion-template.js fantasy-religion-template.txt RELIGION_PACK.md _site/
+          cp index.html .nojekyll engine.mjs openapi.json API.md religion-pack.js religion-folders.js religion-template.js fantasy-religion-template.txt RELIGION_PACK.md _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

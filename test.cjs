@@ -4,7 +4,7 @@ const script=html.match(/<script>([\s\S]*?)<\/script>/)[1];
 new vm.Script(script);
 const sandbox={crypto:require('node:crypto').webcrypto,localStorage:{getItem:()=>null},document:{getElementById:()=>({})},console};
 vm.createContext(sandbox);
-vm.runInContext(script.split("$('tableList').onclick")[0]+`
+vm.runInContext(script.split('// FEATURE_EVENTS_START')[0]+`
 globalThis.api={starter,validate,importData,csvParse,dice,rollTable,setState:s=>state=s,getState:()=>state};`,sandbox);
 const a=sandbox.api;
 assert.equal(a.validate(a.starter()).tables.length,3);
@@ -24,7 +24,7 @@ console.log('PASS: syntax, backup validation/remapping, nested/circular rolls, d
 {
  const box={crypto:require('node:crypto').webcrypto,localStorage:{getItem:()=>null},document:{getElementById:()=>({})}};
  vm.createContext(box);
- vm.runInContext(script.split("$('editView').onclick")[0]+`globalThis.api={validate,importData,rollTable,bindRefs,rerollPart,setState:s=>state=s};`,box);
+ vm.runInContext(script.split('// FEATURE_EVENTS_START')[0]+`globalThis.api={validate,importData,rollTable,bindRefs,rerollPart,setState:s=>state=s};`,box);
  const f=box.api;
  const data={version:1,tables:[{id:'a',name:'Scene',entries:[{text:'A [Creature] guards [Treasure].',weight:1}]},{id:'b',name:'Creature',entries:[{text:'wyrm',weight:1}]},{id:'c',name:'Treasure',entries:[{text:'gold',weight:1}]}],generators:[{id:'g',name:'Scene maker',mode:'linked',batch:2,tables:[{id:'a',count:1},{id:'c',count:3}]}]};
  f.setState(data);f.bindRefs(data.tables[0].entries[0]);
@@ -40,7 +40,7 @@ console.log('PASS: syntax, backup validation/remapping, nested/circular rolls, d
 {
  const box={crypto:require('node:crypto').webcrypto,localStorage:{getItem:()=>null},document:{getElementById:()=>({})}};
  vm.createContext(box);
- vm.runInContext(script.split("$('settlementExample').onclick")[0]+`globalThis.api={runSetup,parseRanges,validate,validateSetup,importData,chooseWeighted,setState:s=>state=s,reset:()=>decks.clear()};`,box);
+ vm.runInContext(script.split('// FEATURE_EVENTS_START')[0]+`globalThis.api={runSetup,parseRanges,validate,validateSetup,importData,chooseWeighted,setState:s=>state=s,reset:()=>decks.clear()};`,box);
  const f=box.api;
  const tables=['Settlement','Biome','Culture','Treasure','Plot'].map((name,i)=>({id:String(i),name,folder:'Test folder',tags:['test'],entries:[{text:name+' A',weight:1},{text:name+' B',weight:1}]}));
  const base=['0','1','2'].map(id=>({id,count:1}));
@@ -61,7 +61,7 @@ console.log('PASS: syntax, backup validation/remapping, nested/circular rolls, d
 // Nested paths and conditional choices across a result, imports and rerolls.
 {
  const box={crypto:require('node:crypto').webcrypto,localStorage:{getItem:()=>null},document:{getElementById:()=>({})}};vm.createContext(box);
- vm.runInContext(script.split("$('addCondition').onclick")[0]+`globalThis.api={folderPath,folderPaths,inFolder,runSetup,rerollResult,validate,importData,setState:s=>state=s};randomInt=()=>0;`,box);
+ vm.runInContext(script.split('// FEATURE_EVENTS_START')[0]+`globalThis.api={folderPath,folderPaths,inFolder,runSetup,rerollResult,validate,importData,setState:s=>state=s};randomInt=()=>0;`,box);
  const f=box.api;
  assert.equal(f.folderPath(' World / Regions // Arctic / '),'World/Regions/Arctic');
  assert.equal(JSON.stringify(f.folderPaths([{folder:'World/Regions/Arctic'}])),'["World","World/Regions","World/Regions/Arctic"]');
