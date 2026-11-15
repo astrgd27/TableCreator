@@ -50,8 +50,8 @@
 <dialog id="conditionsDialog"><div class="dialog-head"><h2>Entry conditions</h2><button data-close="conditionsDialog" aria-label="Close">×</button></div><p class="hint">Match entry text selected in an earlier roll of this result, before dice or references expand. Missing earlier rolls never match. Tables roll in the listed order. A parent entry is available to its sub-tables.</p><label>Require<select id="conditionMode"><option value="all">All conditions</option><option value="any">Any condition</option></select></label><div id="conditionRows"></div><div class="toolbar"><button id="addCondition">+ Condition</button><button id="saveConditions" class="primary">Save conditions</button></div><p class="hint">No conditions means always eligible. Odds are recalculated among eligible entries; editor dice ranges show the full table. Use JSON backup to preserve conditions.</p></dialog>
 <dialog id="referenceDialog"><div class="dialog-head"><h2>Insert a table result</h2><button data-close="referenceDialog" aria-label="Close">×</button></div><label>Referenced table<select id="referenceTable"></select></label><p class="hint">Inserts [Table name] at the entry’s cursor. Use several references to build a sentence. Each reference rolls independently.</p><button id="insertReference" class="primary" style="margin-top:16px">Insert reference</button></dialog>
 <div id="toast" class="notice hidden" role="status"></div>
-<script src="religion-pack.js"></script>
-<script src="religion-template.js"></script>
+<script src="religion-pack.js?v=2"></script>
+<script src="religion-template.js?v=2"></script>
 <script>
 'use strict';
 const $=id=>document.getElementById(id),KEY='table-forge.v1';
