@@ -171,6 +171,15 @@
             "type": "integer",
             "minimum": 1,
             "maximum": 50
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 2000
+            },
+            "maxItems": 100,
+            "description": "Exact input strings for table/generator rolls; overrides saved generator inputs."
           }
         }
       }

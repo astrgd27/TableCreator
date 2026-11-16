@@ -29,6 +29,7 @@ jobs:
           node test-deity.cjs
           node test-deity-large.cjs
           node test-table-upload.cjs
+          node test-inputs.cjs
       - uses: actions/configure-pages@v5
       - name: Prepare static site
         run: |

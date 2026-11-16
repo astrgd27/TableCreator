@@ -90,3 +90,25 @@ In the table editor, choose **Upload & replace** beside **Paste entries**. Selec
 ### Large fantasy deity dossier
 
 **Fantasy deity - full dossier - large** is a separate template under `default/religion`. It preserves the original deity profile and one-to-five unique domain draws, increases the 15 thematic section chances to 42–85%, raises most supporting sentence chances to 50%, and gives each included theme a separate 30% chance of a local or historical detail paragraph. Core descriptions and extra details can now appear together. Existing conditional restrictions still govern sacrifices, clergy, images, secret teachings, and other dependent rolls. The original short dossier and table contents are preserved. Both versions can reach the same religion tables, including linked sub-tables. The large template is installed once and included in directory exports; explicit directory imports remain authoritative.
+
+### Input-specific entries and rolls
+
+Entries have an optional `input` string. Omitted, empty, or whitespace-only inputs are always eligible. A nonblank input requires one exactly matching supplied value (case-sensitive, ignoring outer whitespace). Matching rows join the unrestricted rows with their existing weights; they do not replace them. Existing Conditions must also pass. No exclusions or substring matching are applied.
+
+CSV now uses `text,weight,subtable,input`; old three-column CSV remains supported. JSON entries use `"input":"Rivers"`; collection/directory backups and table replacement preserve it. Plain-text lists remain entry text only, so use CSV or JSON to retain inputs, weights and links.
+
+The Generator's **Roll inputs** box accepts one value per line for single, multiple, and meta-combined rolls. Inputs are saved with a generator, reused on rerolls, and inherited by sub-tables and inline references.
+
+Templates can pass variables and double-quoted literal strings:
+
+```text
+{{draw domains = Deity domains}}
+{{draw domains = Deity domains}}
+{{roll offering = Sacred offering | input: domains, "Winter"}}
+{{offering}}
+{{table:Sacred taboo | input: domains}}
+```
+
+The same `| input:` clause works on `roll`, `draw`, and `table:`. A draw or multi-choice pick variable supplies each selected value separately. A normal roll variable supplies its full generated text as one value, including any linked qualifications. A comma within a quoted literal remains part of that one value. Unassigned input variables raise an error. Inputs are local to that roll and its descendants; subsequent template rolls without a clause receive none.
+
+The bundled religion and both deity dossiers pass their domain values to their other table rolls. Existing installed bundled templates receive this syntax once while preserving edits and paragraph odds; unrelated templates and all tables remain unchanged. Input-specific results only become available after rows are assigned inputs.
