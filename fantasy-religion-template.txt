@@ -1,4 +1,4 @@
-{{roll domain = Religion domains}}A NEW FANTASY RELIGION
+{{roll domain = Deity domains}}A NEW FANTASY RELIGION
 A worldbuilding dossier
 
 This account distinguishes public teaching, lived practice, and disputed local interpretations. Details following an arrow are qualifications inherited from linked sub-tables; they may describe exceptions or competing schools rather than a universal rule. Claims about supernatural events are claims made within the setting, not automatic proof that those claims are true.

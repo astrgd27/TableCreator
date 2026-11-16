@@ -84,3 +84,5 @@ The default deity template always draws one domain and nests continuation chance
 ### Explicit roll inputs
 
 Table and saved-generator generation requests accept `"inputs":["Rivers","Memory"]`. Omission uses the saved generator's inputs, or none for a direct table roll; an explicit empty array clears them. Entry JSON accepts an optional `input` string. Nonblank values require an exact, case-sensitive match after trimming outer spaces; blank/missing values always qualify. Matching rows keep their weights and still obey Conditions. Inputs are inherited by nested tables and retained for rerolls. Template inputs are specified in source using `{{table:Sacred offering | input: domains, "Winter"}}` (also supported on named `roll` and `draw`). Template draw/pick lists pass individual selections, not a comma-split display string.
+
+Row inputs can require multiple values using `&&`, for example `"input":"Rivers && Ancestors"`. Supply `"inputs":["Rivers","Ancestors"]`; every required value must be present. This is AND only, without OR or exclusion behavior. Blank inputs retain their previous behavior.

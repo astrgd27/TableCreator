@@ -112,3 +112,11 @@ Templates can pass variables and double-quoted literal strings:
 The same `| input:` clause works on `roll`, `draw`, and `table:`. A draw or multi-choice pick variable supplies each selected value separately. A normal roll variable supplies its full generated text as one value, including any linked qualifications. A comma within a quoted literal remains part of that one value. Unassigned input variables raise an error. Inputs are local to that roll and its descendants; subsequent template rolls without a clause receive none.
 
 The bundled religion and both deity dossiers pass their domain values to their other table rolls. Existing installed bundled templates receive this syntax once while preserving edits and paragraph odds; unrelated templates and all tables remain unchanged. Input-specific results only become available after rows are assigned inputs.
+
+### Domain-flavored religion additions
+
+The first domain expansion adds 226 distinct results (440 weighted rows) across 55 existing religion tables. All 105 domains weighted 4–6 in the supplied `deity-domains.csv` are represented. A result in a table with a linked detail/complication has a weight-9 unlinked row and a weight-3 linked row with identical text and inputs: the linked variant has 25% of that result's weight. Tables without links receive one weight-12 row. Existing rows, links, other tables and template paragraph odds are retained.
+
+The Deity domains table uses the supplied 201-row list with its exact spelling and weights. Both deity templates and the religion dossier use this vocabulary. Religion domains remains available as its own separate table. The one-time expansion appends content without replacing edited religion entries; table IDs and folder paths are retained. Explicit directory import remains authoritative.
+
+Multiple required row inputs use `&&`, for example `Rivers && Ancestors`. Every listed value must be supplied, with exact case-sensitive matching after trimming outer spaces. A single supplied string `Rivers && Ancestors` does not substitute for the two separate inputs. Blank inputs always qualify; no OR or exclusion operators are implemented. CSV and JSON store the same input string, and manual generators accept the separate supplied values one per line.
