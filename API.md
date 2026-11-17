@@ -85,4 +85,8 @@ The default deity template always draws one domain and nests continuation chance
 
 Table and saved-generator generation requests accept `"inputs":["Rivers","Memory"]`. Omission uses the saved generator's inputs, or none for a direct table roll; an explicit empty array clears them. Entry JSON accepts an optional `input` string. Nonblank values require an exact, case-sensitive match after trimming outer spaces; blank/missing values always qualify. Matching rows keep their weights and still obey Conditions. Inputs are inherited by nested tables and retained for rerolls. Template inputs are specified in source using `{{table:Sacred offering | input: domains, "Winter"}}` (also supported on named `roll` and `draw`). Template draw/pick lists pass individual selections, not a comma-split display string.
 
-Row inputs can require multiple values using `&&`, for example `"input":"Rivers && Ancestors"`. Supply `"inputs":["Rivers","Ancestors"]`; every required value must be present. This is AND only, without OR or exclusion behavior. Blank inputs retain their previous behavior.
+Row inputs can require multiple values using `&&`, for example `"input":"Rivers && Ancestors"`. Supply `"inputs":["Rivers","Ancestors"]`; every required value must be present. Use `||` for OR alternatives; `&&` binds before `||`. Exclusions are not implemented. Blank inputs retain their previous behavior.
+
+
+OR row input example: `Rivers || Healing` requires either value. `Rivers && Ancestors || Healing` requires both Rivers and Ancestors, or Healing alone. AND binds before OR; no parentheses grouping is implemented. Matching remains exact and case-sensitive. A row is eligible only once even if multiple alternatives match, so its weight is not multiplied. Blank inputs remain always eligible. CSV and JSON preserve the expression as a string; supply individual values through templates, manual rolls or the API.
+

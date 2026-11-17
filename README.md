@@ -93,7 +93,7 @@ In the table editor, choose **Upload & replace** beside **Paste entries**. Selec
 
 ### Input-specific entries and rolls
 
-Entries have an optional `input` string. Omitted, empty, or whitespace-only inputs are always eligible. A nonblank input requires one exactly matching supplied value (case-sensitive, ignoring outer whitespace). Matching rows join the unrestricted rows with their existing weights; they do not replace them. Existing Conditions must also pass. No exclusions or substring matching are applied.
+Entries have an optional `input` string. Omitted, empty, or whitespace-only inputs are always eligible. A nonblank input requires one exactly matching supplied value (case-sensitive, ignoring outer whitespace). Matching rows join the unrestricted rows with their existing weights; they do not replace them. Existing Conditions must also pass. Use `||` for alternative input matches and `&&` for requirements within an alternative. No exclusions or substring matching are applied.
 
 CSV now uses `text,weight,subtable,input`; old three-column CSV remains supported. JSON entries use `"input":"Rivers"`; collection/directory backups and table replacement preserve it. Plain-text lists remain entry text only, so use CSV or JSON to retain inputs, weights and links.
 
@@ -119,4 +119,8 @@ The first domain expansion adds 226 distinct results (440 weighted rows) across 
 
 The Deity domains table uses the supplied 201-row list with its exact spelling and weights. Both deity templates and the religion dossier use this vocabulary. Religion domains remains available as its own separate table. The one-time expansion appends content without replacing edited religion entries; table IDs and folder paths are retained. Explicit directory import remains authoritative.
 
-Multiple required row inputs use `&&`, for example `Rivers && Ancestors`. Every listed value must be supplied, with exact case-sensitive matching after trimming outer spaces. A single supplied string `Rivers && Ancestors` does not substitute for the two separate inputs. Blank inputs always qualify; no OR or exclusion operators are implemented. CSV and JSON store the same input string, and manual generators accept the separate supplied values one per line.
+Multiple required row inputs use `&&`, for example `Rivers && Ancestors`. Every listed value must be supplied, with exact case-sensitive matching after trimming outer spaces. A single supplied string `Rivers && Ancestors` does not substitute for the two separate inputs. Blank inputs always qualify; OR alternatives use `||`; exclusions are not implemented. CSV and JSON store the same input string, and manual generators accept the separate supplied values one per line.
+
+
+OR row input example: `Rivers || Healing` requires either value. `Rivers && Ancestors || Healing` requires both Rivers and Ancestors, or Healing alone. AND binds before OR; no parentheses grouping is implemented. Matching remains exact and case-sensitive. A row is eligible only once even if multiple alternatives match, so its weight is not multiplied. Blank inputs remain always eligible. CSV and JSON preserve the expression as a string; supply individual values through templates, manual rolls or the API.
+

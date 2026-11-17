@@ -30,6 +30,7 @@ jobs:
           node test-deity-large.cjs
           node test-table-upload.cjs
           node test-inputs.cjs
+          node test-input-or.cjs
           node test-domain-flavor.cjs
       - uses: actions/configure-pages@v5
       - name: Prepare static site
