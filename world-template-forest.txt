@@ -1,0 +1,26 @@
+{{roll kind = Settlement type tags}}{{pick terrain = Forest}}{{roll climate = Climate tags}}{{pick economy = Forestry | Pastoral}}{{roll government = Government tags}}{{roll fantasy = Fantasy feature tags}}FOREST AND WILDERNESS SITES
+
+A forest in a {{climate}} setting. Nearby communities emphasize {{economy}}; fantastic influence: {{fantasy}}.
+
+THE WOODLAND
+Character: {{table: Forest character | input: kind, terrain, climate, economy, government, fantasy}}. Trail: {{table: Forest trail | input: kind, terrain, climate, economy, government, fantasy}}. Ecology: {{table: Wilderness ecological relationship | input: kind, terrain, climate, economy, government, fantasy}}. Seasonal change: {{table: Wilderness seasonal change | input: kind, terrain, climate, economy, government, fantasy}}.
+
+WILDERNESS SITE 1
+Distinctive feature: {{table: Forest floor feature | input: kind, terrain, climate, economy, government, fantasy}}. Human trace: {{table: Wilderness human trace | input: kind, terrain, climate, economy, government, fantasy}}. Access: {{table: Wilderness site access rule | input: kind, terrain, climate, economy, government, fantasy}}. Connection: {{table: Wilderness location connection | input: kind, terrain, climate, economy, government, fantasy}}. An encounter: {{table: Wilderness encounter | input: kind, terrain, climate, economy, government, fantasy}}.{{chance 55}} A hazard: {{table: Forest hazard | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}
+
+WILDERNESS SITE 2
+Distinctive feature: {{table: Forest floor feature | input: kind, terrain, climate, economy, government, fantasy}}. Human trace: {{table: Wilderness human trace | input: kind, terrain, climate, economy, government, fantasy}}. Access: {{table: Wilderness site access rule | input: kind, terrain, climate, economy, government, fantasy}}. Connection: {{table: Wilderness location connection | input: kind, terrain, climate, economy, government, fantasy}}. An encounter: {{table: Wilderness encounter | input: kind, terrain, climate, economy, government, fantasy}}.{{chance 55}} A hazard: {{table: Forest hazard | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}
+
+WILDERNESS SITE 3
+Distinctive feature: {{table: Forest floor feature | input: kind, terrain, climate, economy, government, fantasy}}. Human trace: {{table: Wilderness human trace | input: kind, terrain, climate, economy, government, fantasy}}. Access: {{table: Wilderness site access rule | input: kind, terrain, climate, economy, government, fantasy}}. Connection: {{table: Wilderness location connection | input: kind, terrain, climate, economy, government, fantasy}}. An encounter: {{table: Wilderness encounter | input: kind, terrain, climate, economy, government, fantasy}}.{{chance 55}} A hazard: {{table: Forest hazard | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}
+
+COMPETING INTERESTS
+Local livelihoods: {{table: Wilderness location local economy | input: kind, terrain, climate, economy, government, fantasy}}. A resource dispute: {{table: Wilderness resource dispute | input: kind, terrain, climate, economy, government, fantasy}}. Conservation: {{table: Wilderness site conservation | input: kind, terrain, climate, economy, government, fantasy}}.
+
+PEOPLE TO MEET
+
+Contact 1: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy}}.
+
+Contact 2: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy}}.
+
+Contact 3: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy}}.

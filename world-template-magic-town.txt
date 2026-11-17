@@ -1,0 +1,27 @@
+{{pick kind = Town | City}}{{roll terrain = Geography tags}}{{roll climate = Climate tags}}{{pick economy = Crafts | Metalworking | Trade}}{{roll government = Government tags}}{{pick fantasy = High Magic}}MAGICAL INDUSTRIAL TOWN
+
+A {{kind}} in {{terrain}} terrain with a {{climate}} climate. Its economy emphasizes {{economy}} under {{government}}.
+
+BUILT AROUND MAGIC
+Built environment: {{table: Magical industrial town - Built environment | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Civic arrangements: {{table: Magical industrial town - Civic arrangements | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Livelihoods and services: {{table: Magical industrial town - Livelihood and services | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Pressures: {{table: Magical industrial town - Pressures and disputes | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}.
+
+AN IMPORTANT WORKS
+Industrial site: {{table: Magical industrial site | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. A failure needing attention: {{table: Magical industrial failure | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. A magical livelihood: {{table: NPC magical livelihood | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}.
+
+EVERYDAY CONSEQUENCES
+Public service: {{table: Fantastical settlement public service | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Ordinary inconvenience: {{table: Fantastical settlement ordinary inconvenience | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Emergency protocol: {{table: Fantastical settlement emergency protocol | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}.
+
+PEOPLE TO MEET
+
+Contact 1: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}.
+
+Contact 2: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}.
+
+Contact 3: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}.
+{{roll site1 = Place type tags | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}
+
+LOCATION 1 — {{site1}}
+This {{site1}} is found at the following position: {{table: Place street position | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site1}}. Its appearance: {{table: Place facade and signage | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site1}}. People come here for the following service or activity: {{table: Place recurring event | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site1}}. Its local connection: {{table: Place local relationship | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site1}}. A current problem: {{table: Place small problem | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site1}}.{{roll site2 = Place type tags | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry"}}
+
+LOCATION 2 — {{site2}}
+This {{site2}} is found at the following position: {{table: Place street position | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site2}}. Its appearance: {{table: Place facade and signage | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site2}}. People come here for the following service or activity: {{table: Place recurring event | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site2}}. Its local connection: {{table: Place local relationship | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site2}}. A current problem: {{table: Place small problem | input: kind, terrain, climate, economy, government, fantasy, "Magical Industry", site2}}.

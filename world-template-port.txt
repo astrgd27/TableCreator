@@ -1,0 +1,27 @@
+{{pick kind = Port}}{{pick terrain = Coast | River | Island}}{{roll climate = Climate tags}}{{pick economy = Trade | Fishing | Crafts}}{{roll government = Government tags}}{{roll fantasy = Fantasy feature tags}}PORT TOWN
+
+A port in a {{terrain}} setting, with a {{climate}} climate. Its economy emphasizes {{economy}}, its politics {{government}}, and its fantastic character {{fantasy}}.
+
+THE WATERFRONT
+Port specialty: {{table: Port specialization | input: kind, terrain, climate, economy, government, fantasy}}. Approach: {{table: Settlement entrance | input: kind, terrain, climate, economy, government, fantasy}}. A transport service: {{table: Quay ferry and stable - Landing and stable service | input: kind, terrain, climate, economy, government, fantasy}}. A difficulty on the quays: {{table: Quay ferry and stable - Transport site difficulty | input: kind, terrain, climate, economy, government, fantasy}}.
+
+TRADE AND POWER
+A trade connection: {{table: Trade connection | input: kind, terrain, climate, economy, government, fantasy}}. Commercial institution: {{table: Commercial institution | input: kind, terrain, climate, economy, government, fantasy}}. Market organization: {{table: Market organization | input: kind, terrain, climate, economy, government, fantasy}}. Economic pressure: {{table: Economic problem | input: kind, terrain, climate, economy, government, fantasy}}.
+
+ASHORE
+Street life: {{table: Street character | input: kind, terrain, climate, economy, government, fantasy}}. A landmark: {{table: Major landmark | input: kind, terrain, climate, economy, government, fantasy}}. An opportunity: {{table: Settlement opportunity | input: kind, terrain, climate, economy, government, fantasy}}.
+
+PEOPLE TO MEET
+
+Contact 1: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy}}.
+
+Contact 2: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy}}.
+
+Contact 3: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy}}.
+{{roll site1 = Place type tags | input: kind, terrain, climate, economy, government, fantasy}}
+
+LOCATION 1 — {{site1}}
+This {{site1}} is found at the following position: {{table: Place street position | input: kind, terrain, climate, economy, government, fantasy, site1}}. Its appearance: {{table: Place facade and signage | input: kind, terrain, climate, economy, government, fantasy, site1}}. People come here for the following service or activity: {{table: Place recurring event | input: kind, terrain, climate, economy, government, fantasy, site1}}. Its local connection: {{table: Place local relationship | input: kind, terrain, climate, economy, government, fantasy, site1}}. A current problem: {{table: Place small problem | input: kind, terrain, climate, economy, government, fantasy, site1}}.{{roll site2 = Place type tags | input: kind, terrain, climate, economy, government, fantasy}}
+
+LOCATION 2 — {{site2}}
+This {{site2}} is found at the following position: {{table: Place street position | input: kind, terrain, climate, economy, government, fantasy, site2}}. Its appearance: {{table: Place facade and signage | input: kind, terrain, climate, economy, government, fantasy, site2}}. People come here for the following service or activity: {{table: Place recurring event | input: kind, terrain, climate, economy, government, fantasy, site2}}. Its local connection: {{table: Place local relationship | input: kind, terrain, climate, economy, government, fantasy, site2}}. A current problem: {{table: Place small problem | input: kind, terrain, climate, economy, government, fantasy, site2}}.

@@ -1,0 +1,24 @@
+{{roll kind = Settlement type tags}}{{roll terrain = Geography tags}}{{roll climate = Climate tags}}{{roll economy = Economy tags}}{{roll government = Government tags}}{{roll fantasy = Fantasy feature tags}}{{pick venue = Tavern | Inn}}TAVERN OR INN
+
+A {{venue}} in a {{kind}}. Local context: {{terrain}}, {{climate}}, {{economy}}, {{government}}, {{fantasy}}.
+
+AT THE DOOR
+Facade: {{table: Place facade and signage | input: kind, terrain, climate, economy, government, fantasy, venue}}. Interior: {{table: Place interior layout | input: kind, terrain, climate, economy, government, fantasy, venue}}. Proprietor: {{table: Place proprietor | input: kind, terrain, climate, economy, government, fantasy, venue}}. Prices: {{table: Place payment and prices | input: kind, terrain, climate, economy, government, fantasy, venue}}.{{if venue = Tavern}}
+
+THE TAPROOM
+House specialty: {{table: Tavern and alehouse - Tavern house specialty | input: kind, terrain, climate, economy, government, fantasy, venue}}. Entertainment: {{table: Tavern and alehouse - Tavern entertainment | input: kind, terrain, climate, economy, government, fantasy, venue}}. Social purpose: {{table: Tavern and alehouse - Tavern social function | input: kind, terrain, climate, economy, government, fantasy, venue}}. Trouble: {{table: Tavern and alehouse - Tavern trouble | input: kind, terrain, climate, economy, government, fantasy, venue}}.{{else}}
+
+LODGING
+Business model: {{table: Inn business model | input: kind, terrain, climate, economy, government, fantasy, venue}}. Rooms: {{table: Inn and lodging - Inn room arrangement | input: kind, terrain, climate, economy, government, fantasy, venue}}. Guest service: {{table: Inn and lodging - Inn guest service | input: kind, terrain, climate, economy, government, fantasy, venue}}. Complication: {{table: Inn and lodging - Inn complication | input: kind, terrain, climate, economy, government, fantasy, venue}}.{{end}}
+
+THREE GUESTS
+
+Guest 1: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, venue}}. Their conversational habit: {{table: NPC conversational habit | input: kind, terrain, climate, economy, government, fantasy, venue}}. What they want: {{table: NPC small personal goal | input: kind, terrain, climate, economy, government, fantasy, venue}}.
+
+Guest 2: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, venue}}. Their conversational habit: {{table: NPC conversational habit | input: kind, terrain, climate, economy, government, fantasy, venue}}. What they want: {{table: NPC small personal goal | input: kind, terrain, climate, economy, government, fantasy, venue}}.
+
+Guest 3: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, venue}}. Their conversational habit: {{table: NPC conversational habit | input: kind, terrain, climate, economy, government, fantasy, venue}}. What they want: {{table: NPC small personal goal | input: kind, terrain, climate, economy, government, fantasy, venue}}.
+{{chance 65}}
+
+BEHIND THE SCENES
+Supply chain: {{table: Place supply chain | input: kind, terrain, climate, economy, government, fantasy, venue}}. Hidden arrangement: {{table: Place secret or hidden arrangement | input: kind, terrain, climate, economy, government, fantasy, venue}}.{{end}}

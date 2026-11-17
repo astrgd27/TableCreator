@@ -1,0 +1,20 @@
+{{roll kind = Settlement type tags}}{{roll terrain = Geography tags}}{{roll climate = Climate tags}}{{pick economy = Crafts}}{{pick government = Guild Rule}}{{roll fantasy = Fantasy feature tags}}GUILD AND GUILDHALL
+
+A guild active in a {{kind}} amid {{terrain}} terrain. Context: {{climate}}, {{fantasy}}.
+
+THE GUILD
+Trade: {{table: Guild trade | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Admission: {{table: Guild admission | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Privilege: {{table: Guild privilege | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Internal faction: {{table: Guild internal faction | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. External relationship: {{table: Guild external relationship | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}.
+
+THE HALL
+Public facility: {{table: Guildhall public facility | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Public room: {{table: Guildhall and trade hall - Guildhall public room | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Interior: {{table: Place interior layout | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Staff: {{table: Place staff and labor | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}.
+
+BUSINESS AND DISPUTES
+A commission: {{table: Workshop and craft yard - Workshop commission | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Rivalry: {{table: Guild rivalry | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. A disagreement inside the hall: {{table: Guildhall and trade hall - Guildhall internal dispute | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}.
+
+PEOPLE TO MEET
+
+Contact 1: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}.
+
+Contact 2: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}.
+
+Contact 3: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. Their goal: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}. What they know: {{table: NPC useful knowledge | input: kind, terrain, climate, economy, government, fantasy, "Guildhall", "Guild Member"}}.

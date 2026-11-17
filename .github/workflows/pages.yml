@@ -33,6 +33,7 @@ jobs:
           node test-input-or.cjs
           node test-domain-flavor.cjs
           node test-default-content.cjs
+          node test-worldbuilding-templates.cjs
       - uses: actions/configure-pages@v5
       - name: Prepare static site
         run: |
