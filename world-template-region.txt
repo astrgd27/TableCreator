@@ -85,3 +85,36 @@ IMPORTANT PERSON 7
 
 CONNECTIONS FOR PLAY
 Person 1 and Person 2 share the following history: {{table: Relationship origin | input: terrain, climate, economy, government}}. Their current relationship: {{table: Relationship current state | input: terrain, climate, economy, government}}. Location 1 and Location 2 are linked by this practical arrangement: {{table: Interplace practical collaboration | input: terrain, climate, economy, government}}.{{chance 60}} A favor connects Person 2 to Person 3: {{table: Relationship favor owed | input: terrain, climate, economy, government}}.{{end}}
+
+FURTHER LOCAL AND HISTORICAL FACETS
+The following optional details describe particular places, groups, or periods. They supplement the main profile; a population or political variation belongs to that local example.{{chance 55}}
+
+ADDITIONAL FOUNDATIONS
+{{table: Region dossier facets - Additional foundations | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Additional foundations | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+CIVILIZATIONS AND DIASPORAS
+{{table: Region dossier facets - Civilizations and Diasporas | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Civilizations and Diasporas | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+DIPLOMACY AND ECONOMIC NETWORKS
+{{table: Region dossier facets - Diplomacy and economic networks | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Diplomacy and economic networks | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+FANTASTICAL REGIONAL GEOGRAPHY
+{{table: Region dossier facets - Fantastical regional geography | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Fantastical regional geography | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+HISTORICAL CHANGE
+{{table: Region dossier facets - Historical Change | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Historical Change | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+PEOPLES AND WAYS OF LIFE
+{{table: Region dossier facets - Peoples and Ways of Life | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Peoples and Ways of Life | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+REGIONAL CULTURE
+{{table: Region dossier facets - Regional culture | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Regional culture | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+REGIONAL SOCIETY AND INSTITUTIONS
+{{table: Region dossier facets - Regional society and institutions | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Regional society and institutions | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+RURAL FABRIC
+{{table: Region dossier facets - Rural Fabric | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Rural Fabric | input: terrain, climate, economy, government}}.{{end}}{{end}}{{chance 55}}
+
+WILDERNESS AND STRANGE PLACES
+{{table: Region dossier facets - Wilderness and Strange Places | input: terrain, climate, economy, government}}.{{chance 35}} A second local example: {{table: Region dossier facets - Wilderness and Strange Places | input: terrain, climate, economy, government}}.{{end}}{{end}}

@@ -143,3 +143,12 @@ The settlement dossier now creates 3–5 numbered locations and 3–5 important 
 Six focused templates live below `default/settlements and regions/Templates`: port town, frontier fortress, magical industrial town, tavern or inn, guildhall, and forest sites. They establish relevant exact inputs, use specialist tables, and include several contacts, guests, or locations. People are identified by numbered descriptions rather than invented personal names.
 
 A separate one-time template update upgrades the two big templates and installs the six new ones without changing any tables or religion templates. A locally edited big template is retained in `Templates/Previous versions` before its original slot is upgraded. The quick portrait and general local-establishment templates stay unchanged. Directory imports remain authoritative.
+
+
+### Complete large-template coverage and settlement size
+
+The full settlement dossier can reach all 998 tables under Settlements plus the shared qualification table. The regional gazetteer can reach all 240 Regions and nations tables, plus relevant peoples, civilizations, diaspora, historical-change and rural-geography tables (576 targets including the shared qualification). Existing core references remain available. Twenty-three supporting facet selectors provide optional thematic entry points; linked details and qualifications remain connected to their parents. Input-only tables are selected only through an eligible input expression. Coverage is audited in `worldbuilding-coverage.json` and exercised by `test-worldbuilding-coverage.cjs`.
+
+These are possible sources across different generations, not a request to roll every table in every output. Each thematic section has a 55% appearance chance and a 35% chance of a second local example. Vocabulary tables feed exact context strings into the facets. Additional details are framed as particular local or historical examples, so they do not redefine the main profile.
+
+Settlement rosters use the rolled Settlement scale when it states a population; qualitative scale results fall back to the settlement type. The size band is displayed explicitly. Tiny: 1–2 people and locations; Small: 2–4; Medium: 4–6; Large: 6–9; Metropolis: 9–13. Each optional person/location pair appears together. Connections to a second or third person are emitted only when those people exist. Region rosters remain 4–7. The one-time template revision preserves table edits and backs up edited large templates before replacement.
