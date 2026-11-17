@@ -152,3 +152,9 @@ The full settlement dossier can reach all 998 tables under Settlements plus the 
 These are possible sources across different generations, not a request to roll every table in every output. Each thematic section has a 55% appearance chance and a 35% chance of a second local example. Vocabulary tables feed exact context strings into the facets. Additional details are framed as particular local or historical examples, so they do not redefine the main profile.
 
 Settlement rosters use the rolled Settlement scale when it states a population; qualitative scale results fall back to the settlement type. The size band is displayed explicitly. Tiny: 1–2 people and locations; Small: 2–4; Medium: 4–6; Large: 6–9; Metropolis: 9–13. Each optional person/location pair appears together. Connections to a second or third person are emitted only when those people exist. Region rosters remain 4–7. The one-time template revision preserves table edits and backs up edited large templates before replacement.
+
+
+
+### Independent people and locations
+
+The large settlement and region templates no longer assign important people to numbered locations or roll a place-connection detail for those people. Their numbers identify separate lists. Size-based counts and person-to-person relationships are retained. The NPC/place-connection table remains available as an optional, separate local vignette about an unnamed resident and unspecified place, preserving table coverage without linking the generated cast. Existing edited large templates are backed up before this one-time update.
