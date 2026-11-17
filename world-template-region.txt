@@ -1,0 +1,39 @@
+{{roll terrain = Region terrain tags}}{{roll climate = Region environment tags}}{{roll economy = Region economy tags}}{{roll government = Nation structure tags}}FANTASY REGION AND NATION
+
+The region’s terrain theme is {{terrain}}, its environmental character {{climate}}, its economic emphasis {{economy}}, and its political framework {{government}}.
+
+THE LAND
+Regional identity: {{table: Region identity | input: terrain, climate, economy, government}}. Extent: {{table: Region extent | input: terrain, climate, economy, government}}. Waterways: {{table: Regional water system | input: terrain, climate, economy, government}}. Ecology: {{table: Regional ecology | input: terrain, climate, economy, government}}.
+
+PEOPLE AND LIVELIHOODS
+Settlement pattern: {{table: Regional settlement pattern | input: terrain, climate, economy, government}}. Population: {{table: Regional population distribution | input: terrain, climate, economy, government}}. Resources: {{table: Regional resource | input: terrain, climate, economy, government}}. Trade: {{table: Regional trade flow | input: terrain, climate, economy, government}}.
+
+POWER
+Political legitimacy: {{table: Political legitimacy | input: terrain, climate, economy, government}}. Administration: {{table: Territorial administration | input: terrain, climate, economy, government}}. Local autonomy: {{table: Local autonomy | input: terrain, climate, economy, government}}. Succession: {{table: Succession system | input: terrain, climate, economy, government}}.{{chance 80}}
+
+ROADS AND BORDERS
+Travel: {{table: Regional travel network | input: terrain, climate, economy, government}}. A bottleneck: {{table: Transport bottleneck | input: terrain, climate, economy, government}}. The border: {{table: Border regime | input: terrain, climate, economy, government}}.{{end}}{{chance 60}}
+
+PROVINCIAL TENSIONS
+A provincial identity: {{table: Provincial identity | input: terrain, climate, economy, government}}. A grievance: {{table: Provincial grievance | input: terrain, climate, economy, government}}. A proposed reform: {{table: Provincial reform | input: terrain, climate, economy, government}}.{{end}}{{chance 65}}
+
+NEIGHBORS
+Foreign policy: {{table: Foreign policy | input: terrain, climate, economy, government}}. A diplomatic relationship: {{table: Diplomatic relationship | input: terrain, climate, economy, government}}. A territorial claim: {{table: Territorial claim | input: terrain, climate, economy, government}}.{{end}}{{chance 70}}
+
+DEEP HISTORY
+Ancient remains: {{table: Regional ancient remains | input: terrain, climate, economy, government}}. A turning point: {{table: Nation historical turning point | input: terrain, climate, economy, government}}.{{end}}
+
+THE PRESENT MOMENT
+A current concern: {{table: Nation current concern | input: terrain, climate, economy, government}}. An opportunity: {{table: Nation opportunity | input: terrain, climate, economy, government}}. A hazard: {{table: Regional hazard | input: terrain, climate, economy, government}}.{{if terrain = Forest}}
+
+IN THE FOREST
+Woodland: {{table: Forest character | input: terrain, climate, economy, government}}. A forest hazard: {{table: Forest hazard | input: terrain, climate, economy, government}}.{{end}}{{if climate = High Magic}}
+
+STRANGE GEOGRAPHY
+An impossible landscape: {{table: Anomalous landscape | input: terrain, climate, economy, government}}. Its ecology: {{table: Anomalous ecology | input: terrain, climate, economy, government}}.{{end}}{{chance 55}}
+
+CULTURAL EXCHANGE
+Belonging: {{table: Civilizational exchange - Citizenship and belonging - Origins and arrangements | input: terrain, climate, economy, government}}. Diaspora institutions: {{table: Civilizational exchange - Diaspora institutions - Institutions and consequences | input: terrain, climate, economy, government}}.{{end}}{{chance 60}}
+
+CHANGES THROUGH TIME
+Settlement waves: {{table: Historical transformation - Regional settlement waves | input: terrain, climate, economy, government}}. Trade transformations: {{table: Historical transformation - Regional trade transformations | input: terrain, climate, economy, government}}.{{end}}

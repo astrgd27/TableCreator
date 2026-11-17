@@ -1,0 +1,51 @@
+{{roll kind = Settlement type tags}}{{roll terrain = Geography tags}}{{roll climate = Climate tags}}{{roll economy = Economy tags}}{{roll government = Government tags}}{{roll fantasy = Fantasy feature tags}}FANTASY SETTLEMENT
+
+A {{kind}} with {{terrain}} surroundings and a {{climate}} climate. Its principal economic theme is {{economy}}; its political setting is {{government}}, with {{fantasy}} influencing local life.
+
+AT FIRST SIGHT
+The settlement is known for: {{table: Settlement identity | input: kind, terrain, climate, economy, government, fantasy}}. Its streets: {{table: Street character | input: kind, terrain, climate, economy, government, fantasy}}. A landmark: {{table: Major landmark | input: kind, terrain, climate, economy, government, fantasy}}.
+
+LIFE AND LIVELIHOODS
+Working life: {{table: Production organization | input: kind, terrain, climate, economy, government, fantasy}}. Daily custom: {{table: Local customs | input: kind, terrain, climate, economy, government, fantasy}}. Visitors encounter: {{table: Outsider reception | input: kind, terrain, climate, economy, government, fantasy}}.
+
+A REASON TO STAY
+A current concern: {{table: Settlement current concern | input: kind, terrain, climate, economy, government, fantasy}}. An opportunity: {{table: Settlement opportunity | input: kind, terrain, climate, economy, government, fantasy}}.{{chance 75}}
+
+ORIGINS
+Its founding: {{table: Founding circumstance | input: kind, terrain, climate, economy, government, fantasy}}. Early inhabitants: {{table: Founding population | input: kind, terrain, climate, economy, government, fantasy}}. Growth has followed: {{table: Settlement growth pattern | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 80}}
+
+HOMES AND NEIGHBORS
+Households: {{table: Household structure | input: kind, terrain, climate, economy, government, fantasy}}. Housing: {{table: Housing arrangement | input: kind, terrain, climate, economy, government, fantasy}}. Community ties: {{table: Community relationships | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 85}}
+
+AUTHORITY AND CONFLICT
+Power is distributed through: {{table: Distribution of authority | input: kind, terrain, climate, economy, government, fantasy}}. A powerful institution: {{table: Powerful institution | input: kind, terrain, climate, economy, government, fantasy}}. A civic dispute: {{table: Civic dispute | input: kind, terrain, climate, economy, government, fantasy}}. Justice: {{table: Judicial procedure | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 85}}
+
+MARKETS AND WORK
+Markets: {{table: Market organization | input: kind, terrain, climate, economy, government, fantasy}}. A signature product: {{table: Signature product | input: kind, terrain, climate, economy, government, fantasy}}. Trade connections: {{table: Trade connection | input: kind, terrain, climate, economy, government, fantasy}}. An economic difficulty: {{table: Economic problem | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 70}}
+
+DAILY LIFE
+Food: {{table: Food culture | input: kind, terrain, climate, economy, government, fantasy}}. Clothing: {{table: Clothing traditions | input: kind, terrain, climate, economy, government, fantasy}}. Entertainment: {{table: Entertainment | input: kind, terrain, climate, economy, government, fantasy}}. Education: {{table: Local education | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 65}}
+
+STREETS AND SERVICES
+Water: {{table: Water supply infrastructure | input: kind, terrain, climate, economy, government, fantasy}}. Public services: {{table: Public services | input: kind, terrain, climate, economy, government, fantasy}}. Lighting: {{table: Public lighting | input: kind, terrain, climate, economy, government, fantasy}}. Sanitation: {{table: Waste and sanitation | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 45}}
+
+HIDDEN CORNERS
+An overlooked place: {{table: Abandoned or hidden space | input: kind, terrain, climate, economy, government, fantasy}}. A local faction: {{table: Local faction | input: kind, terrain, climate, economy, government, fantasy}}. A divided identity: {{table: Local identity conflict | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{if terrain = Forest}}
+
+BEYOND THE HOUSES
+The surrounding woodland: {{table: Forest character | input: kind, terrain, climate, economy, government, fantasy}}. A trail: {{table: Forest trail | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{if terrain = Island}}
+
+ISLAND LIFE
+The island: {{table: Island character | input: kind, terrain, climate, economy, government, fantasy}}. The coast: {{table: Coast character | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 60}}
+
+PEOPLE WORTH KNOWING
+A notable neighbor: {{table: Community notable person | input: kind, terrain, climate, economy, government, fantasy}}. Their ambition: {{table: NPC immediate ambition | input: kind, terrain, climate, economy, government, fantasy}}. Their local allegiance: {{table: NPC local allegiance | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{chance 50}}
+
+HISTORICAL LAYERS
+A past transition: {{table: Historical transformation - Settlement economy through time | input: kind, terrain, climate, economy, government, fantasy}}. A surviving legacy: {{table: Historical transformation - Historical landscape scars | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{if fantasy = Nonhuman Population}}
+
+DIFFERENT WAYS OF LIVING
+Household adaptations: {{table: Nonhuman household adaptation | input: kind, terrain, climate, economy, government, fantasy}}. Civic representation: {{table: People - Government and representation - Community practice | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}{{if fantasy = High Magic}}
+
+MAGIC IN DAILY LIFE
+An everyday inconvenience: {{table: Fantastical settlement ordinary inconvenience | input: kind, terrain, climate, economy, government, fantasy}}. A public service: {{table: Fantastical settlement public service | input: kind, terrain, climate, economy, government, fantasy}}.{{end}}

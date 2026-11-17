@@ -1,0 +1,30 @@
+{{roll kind = Settlement type tags}}{{roll terrain = Geography tags}}{{roll climate = Climate tags}}{{roll economy = Economy tags}}{{roll government = Government tags}}{{roll fantasy = Fantasy feature tags}}{{roll place = Place type tags}}A PLACE IN THE SETTLEMENT
+
+This {{place}} serves a {{kind}} in a {{terrain}} setting. Context: {{climate}}, {{economy}}, {{government}}, {{fantasy}}.
+
+ARRIVAL
+Street position: {{table: Place street position | input: kind, terrain, climate, economy, government, fantasy, place}}. Facade: {{table: Place facade and signage | input: kind, terrain, climate, economy, government, fantasy, place}}. Inside: {{table: Place interior layout | input: kind, terrain, climate, economy, government, fantasy, place}}.
+
+PEOPLE AND BUSINESS
+Proprietor: {{table: Place proprietor | input: kind, terrain, climate, economy, government, fantasy, place}}. Staff: {{table: Place staff and labor | input: kind, terrain, climate, economy, government, fantasy, place}}. Visitors: {{table: Place customers and visitors | input: kind, terrain, climate, economy, government, fantasy, place}}. Prices: {{table: Place payment and prices | input: kind, terrain, climate, economy, government, fantasy, place}}.
+
+LOCAL CONNECTIONS
+Reputation: {{table: Place reputation and gossip | input: kind, terrain, climate, economy, government, fantasy, place}}. A neighborhood connection: {{table: Place local relationship | input: kind, terrain, climate, economy, government, fantasy, place}}. A small problem: {{table: Place small problem | input: kind, terrain, climate, economy, government, fantasy, place}}.{{chance 35}}
+
+BEHIND THE DOOR
+A concealed arrangement: {{table: Place secret or hidden arrangement | input: kind, terrain, climate, economy, government, fantasy, place}}. A strange detail: {{table: Place supernatural detail | input: kind, terrain, climate, economy, government, fantasy, place}}.{{end}}{{if place = Tavern}}
+
+SPECIALTY
+Its specialty: {{table: Tavern and alehouse - Tavern house specialty | input: kind, terrain, climate, economy, government, fantasy, place}}.{{end}}{{if place = Inn}}
+
+SPECIALTY
+Its specialty: {{table: Inn and lodging - Inn guest service | input: kind, terrain, climate, economy, government, fantasy, place}}.{{end}}{{if place = Workshop}}
+
+SPECIALTY
+Its specialty: {{table: Workshop and craft yard - Workshop specialty | input: kind, terrain, climate, economy, government, fantasy, place}}.{{end}}{{if place = Shrine}}
+
+SPECIALTY
+Its specialty: {{table: Shrine and temple - Shrine local service | input: kind, terrain, climate, economy, government, fantasy, place}}.{{end}}{{if place = School}}
+
+SPECIALTY
+Its specialty: {{table: Archive school and library - School specialty | input: kind, terrain, climate, economy, government, fantasy, place}}.{{end}}

@@ -124,3 +124,14 @@ Multiple required row inputs use `&&`, for example `Rivers && Ancestors`. Every 
 
 OR row input example: `Rivers || Healing` requires either value. `Rivers && Ancestors || Healing` requires both Rivers and Ancestors, or Healing alone. AND binds before OR; no parentheses grouping is implemented. Matching remains exact and case-sensitive. A row is eligible only once even if multiple alternatives match, so its weight is not multiplied. Blank inputs remain always eligible. CSV and JSON preserve the expression as a string; supply individual values through templates, manual rolls or the API.
 
+
+
+### Updated default collections (November 2026)
+
+On the next load, the app replaces the 324 matching tables under `default/religion` with the uploaded Distinct Rare Domain Pass (11,429 rows), preserving table IDs and existing narrative templates. This is a one-time overwrite; later edits remain yours. Tables outside that folder are retained.
+
+The Stage 27 settlement/region collection adds 1,239 tables (32,493 rows) under `default/settlements and regions`, organized into Settlements, Regions and nations, and Shared tables, with 47 subject paths. Stage numbers are removed from folder names; table names, weights, inputs, and sub-table relationships are preserved.
+
+Four templates are available in its Templates folder: **Fantasy settlement - quick portrait**, **Fantasy settlement - full dossier**, **Fantasy region and nation - gazetteer**, and **Fantasy settlement - local establishment**. They roll the supplied vocabulary tables first and pass those exact values to later rolls. The larger templates add optional themed paragraphs and branches for relevant geography and fantasy traits. Inputs bias eligible weighted outcomes; blank-input rows remain available, so context is not a guarantee of perfect narrative consistency.
+
+Collections now allow up to 5,000 tables in the browser and AI engine. Unchanged default rows use immutable versioned packs as a local-storage dictionary; edited rows are saved in full. Directory exports remain complete, standalone JSON. Keep `religion-refresh-v1.js` and `worldbuilding-pack-v1.js` immutable and available in future releases so existing saved dictionaries can be decoded. A full directory import is authoritative and does not automatically reapply these defaults.

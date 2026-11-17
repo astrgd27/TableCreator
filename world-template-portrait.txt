@@ -1,0 +1,12 @@
+{{roll kind = Settlement type tags}}{{roll terrain = Geography tags}}{{roll climate = Climate tags}}{{roll economy = Economy tags}}{{roll government = Government tags}}{{roll fantasy = Fantasy feature tags}}FANTASY SETTLEMENT
+
+A {{kind}} with {{terrain}} surroundings and a {{climate}} climate. Its principal economic theme is {{economy}}; its political setting is {{government}}, with {{fantasy}} influencing local life.
+
+AT FIRST SIGHT
+The settlement is known for: {{table: Settlement identity | input: kind, terrain, climate, economy, government, fantasy}}. Its streets: {{table: Street character | input: kind, terrain, climate, economy, government, fantasy}}. A landmark: {{table: Major landmark | input: kind, terrain, climate, economy, government, fantasy}}.
+
+LIFE AND LIVELIHOODS
+Working life: {{table: Production organization | input: kind, terrain, climate, economy, government, fantasy}}. Daily custom: {{table: Local customs | input: kind, terrain, climate, economy, government, fantasy}}. Visitors encounter: {{table: Outsider reception | input: kind, terrain, climate, economy, government, fantasy}}.
+
+A REASON TO STAY
+A current concern: {{table: Settlement current concern | input: kind, terrain, climate, economy, government, fantasy}}. An opportunity: {{table: Settlement opportunity | input: kind, terrain, climate, economy, government, fantasy}}.
