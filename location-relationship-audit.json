@@ -1,0 +1,1027 @@
+{
+  "routes": {
+    "Location details - optional detail": [
+      "Building nonhuman adaptation",
+      "Building to neighborhood consequence",
+      "Commercial and residential link",
+      "Conditional building adaptation",
+      "Conditional clientele",
+      "Conditional local history",
+      "Conditional place complication",
+      "Conditional place presence",
+      "Conditional place service",
+      "Local site access rule",
+      "Local site accessibility feature",
+      "Local site civic importance",
+      "Local site conditional detail",
+      "Local site disputed ownership",
+      "Local site future change",
+      "Local site local rumor",
+      "Local site minor incident",
+      "Local site nearby feature",
+      "Local site notable room",
+      "Local site operating calendar",
+      "Local site physical footprint",
+      "Local site public complaint",
+      "Local site staff arrangement",
+      "Local site supply dependency",
+      "Local site unusual visitor",
+      "Local site upkeep problem",
+      "Ordinary building unusual feature",
+      "Place accessibility and exclusion",
+      "Place changing condition",
+      "Place customers and visitors",
+      "Place furnishings and fittings",
+      "Place interior layout",
+      "Place memorable object",
+      "Place naming practice",
+      "Place opening hours",
+      "Place owner background",
+      "Place payment and prices",
+      "Place practical obstacle",
+      "Place proprietor",
+      "Place public controversy",
+      "Place reputation and gossip",
+      "Place secret or hidden arrangement",
+      "Place sensory signature",
+      "Place service quality",
+      "Place staff and labor",
+      "Place staff relationship",
+      "Place subtle supernatural anomaly",
+      "Place supernatural detail",
+      "Place supply chain",
+      "Residential building type"
+    ],
+    "Location further details - Tavern": [
+      "Tavern and alehouse - Tavern social function",
+      "Tavern and alehouse - Tavern trouble",
+      "Tavern distinctive offering",
+      "Tavern regular patron",
+      "Tavern social tension"
+    ],
+    "Location type: Tavern": [
+      "Tavern and alehouse - Tavern entertainment",
+      "Tavern and alehouse - Tavern house specialty",
+      "Tavern and alehouse - Tavern social function",
+      "Tavern and alehouse - Tavern trouble",
+      "Tavern distinctive offering",
+      "Tavern regular patron",
+      "Tavern social tension"
+    ],
+    "Location further details - Inn": [
+      "Inn and lodging - Inn room arrangement",
+      "Inn business model",
+      "Inn guest service",
+      "Inn guestroom detail",
+      "Inn provision and supply",
+      "Inn recurring guest"
+    ],
+    "Location type: Inn": [
+      "Inn and lodging - Inn complication",
+      "Inn and lodging - Inn guest service",
+      "Inn and lodging - Inn room arrangement",
+      "Inn business model",
+      "Inn guest service",
+      "Inn guestroom detail",
+      "Inn provision and supply",
+      "Inn recurring guest"
+    ],
+    "Location further details - Guildhall": [
+      "Guildhall public facility"
+    ],
+    "Location type: Guildhall": [
+      "Guildhall and trade hall - Guildhall internal dispute",
+      "Guildhall and trade hall - Guildhall public room",
+      "Guildhall public facility"
+    ],
+    "Location further details - Shop": [
+      "Shop business vulnerability",
+      "Shop customer custom",
+      "Shop premises and layout",
+      "Shop proprietor practice",
+      "Shop stock provenance",
+      "Commercial building type"
+    ],
+    "Location type: Shop": [
+      "Market and shop - Market dispute",
+      "Market and shop - Shop merchandise niche",
+      "Shop business vulnerability",
+      "Shop customer custom",
+      "Shop premises and layout",
+      "Shop proprietor practice",
+      "Shop stock provenance",
+      "Commercial building type"
+    ],
+    "Location type: Market": [
+      "Market and shop - Market dispute",
+      "Market and shop - Market stall practice"
+    ],
+    "Location further details - Workshop": [
+      "Workshop and craft yard - Workshop working hazard",
+      "Workshop contract problem",
+      "Workshop floor arrangement",
+      "Workshop labor practice",
+      "Workshop production specialty",
+      "Workshop waste and reuse"
+    ],
+    "Location type: Workshop": [
+      "Workshop and craft yard - Workshop commission",
+      "Workshop and craft yard - Workshop specialty",
+      "Workshop and craft yard - Workshop working hazard",
+      "Workshop contract problem",
+      "Workshop floor arrangement",
+      "Workshop labor practice",
+      "Workshop production specialty",
+      "Workshop waste and reuse"
+    ],
+    "Location further details - Bathhouse": [
+      "Bathhouse public arrangement",
+      "Bathhouse water dispute"
+    ],
+    "Location type: Bathhouse": [
+      "Bathhouse and washhouse - Bathhouse arrangement",
+      "Bathhouse and washhouse - Bathhouse dispute",
+      "Bathhouse public arrangement",
+      "Bathhouse water dispute"
+    ],
+    "Location further details - Shrine": [
+      "Shrine local practice"
+    ],
+    "Location type: Shrine": [
+      "Shrine and temple - Shrine disagreement",
+      "Shrine and temple - Shrine local service",
+      "Shrine local practice"
+    ],
+    "Location further details - Temple": [
+      "Temple settlement specialization",
+      "Temple clergy dispute",
+      "Temple daily service",
+      "Temple founding purpose",
+      "Temple liturgical space",
+      "Temple sacred object custody"
+    ],
+    "Location type: Temple": [
+      "Shrine and temple - Shrine disagreement",
+      "Shrine and temple - Shrine local service",
+      "Temple settlement specialization",
+      "Temple clergy dispute",
+      "Temple daily service",
+      "Temple founding purpose",
+      "Temple liturgical space",
+      "Temple sacred object custody"
+    ],
+    "Location type: Apothecary": [
+      "Healer and apothecary - Apothecary supply issue",
+      "Healer and apothecary - Healer practice"
+    ],
+    "Location type: Healer": [
+      "Healer and apothecary - Apothecary supply issue",
+      "Healer and apothecary - Healer practice"
+    ],
+    "Location further details - Archive": [
+      "Archive preservation problem",
+      "Archive record anomaly",
+      "Archive school and library - School specialty"
+    ],
+    "Location type: Archive": [
+      "Archive school and library - Archive access dispute",
+      "Archive school and library - Archive collection",
+      "Archive preservation problem",
+      "Archive record anomaly",
+      "Archive school and library - School specialty"
+    ],
+    "Location further details - Library": [
+      "Library access practice",
+      "Library collection strength"
+    ],
+    "Location type: Library": [
+      "Archive school and library - Archive access dispute",
+      "Archive school and library - Archive collection",
+      "Library access practice",
+      "Library collection strength"
+    ],
+    "Location further details - School": [
+      "School curriculum specialty",
+      "School disciplinary controversy",
+      "School learning space",
+      "School patron expectation"
+    ],
+    "Location type: School": [
+      "Archive school and library - School specialty",
+      "School admission rule",
+      "School curriculum specialty",
+      "School disciplinary controversy",
+      "School learning space",
+      "School patron expectation"
+    ],
+    "Location type: Watch Post": [
+      "Watch post and civic office - Watch post difficulty"
+    ],
+    "Location type: Civic Office": [
+      "Watch post and civic office - Civic office service"
+    ],
+    "Location type: Ferry": [
+      "Quay ferry and stable - Landing and stable service",
+      "Quay ferry and stable - Transport site difficulty"
+    ],
+    "Location further details - Quay": [
+      "Waterfront daily operation",
+      "Waterfront edge type",
+      "Waterfront hazard"
+    ],
+    "Location type: Quay": [
+      "Quay ferry and stable - Landing and stable service",
+      "Quay ferry and stable - Transport site difficulty",
+      "Waterfront daily operation",
+      "Waterfront edge type",
+      "Waterfront hazard"
+    ],
+    "Location type: Stable": [
+      "Quay ferry and stable - Landing and stable service",
+      "Quay ferry and stable - Transport site difficulty"
+    ],
+    "Location further details - Magical Service": [
+      "Magical site containment practice",
+      "Magical site unintended effect",
+      "Place magical service safeguard",
+      "Commercial magic in daily use"
+    ],
+    "Location type: Magical Service": [
+      "Magical service location - Magical service constraint",
+      "Magical service location - Magical service offered",
+      "Magical site containment practice",
+      "Magical site unintended effect",
+      "Place magical service safeguard",
+      "Commercial magic in daily use"
+    ],
+    "Location further details - Warehouse": [
+      "Warehouse labor arrangement",
+      "Warehouse operating purpose",
+      "Warehouse physical system"
+    ],
+    "Location type: Warehouse": [
+      "Warehouse disruption",
+      "Warehouse inventory practice",
+      "Warehouse labor arrangement",
+      "Warehouse operating purpose",
+      "Warehouse physical system"
+    ],
+    "Location further details - Performance House": [
+      "Theater patron conflict",
+      "Theater performance tradition"
+    ],
+    "Location type: Performance House": [
+      "Theater audience custom",
+      "Theater backstage feature",
+      "Theater patron conflict",
+      "Theater performance tradition"
+    ],
+    "Location type: Garden": [
+      "Urban open space type",
+      "Urban open space stewardship"
+    ],
+    "Location type: Kitchen": [
+      "Place service quality"
+    ],
+    "Location further details - Hospital": [
+      "Hospital patient population",
+      "Hospital treatment practice"
+    ],
+    "Location type: Hospital": [
+      "Hospital building constraint",
+      "Hospital funding tension",
+      "Hospital patient population",
+      "Hospital treatment practice"
+    ],
+    "Location further details - Prison": [
+      "Prison detention purpose",
+      "Prison security feature"
+    ],
+    "Location type: Prison": [
+      "Prison corruption risk",
+      "Prison daily regime",
+      "Prison detention purpose",
+      "Prison security feature"
+    ],
+    "Location type: Courthouse": [
+      "Courthouse hearing custom",
+      "Courthouse procedural weakness"
+    ],
+    "Location further details - Cemetery": [
+      "Cemetery memorial dispute",
+      "Cemetery supernatural report"
+    ],
+    "Location type: Cemetery": [
+      "Cemetery burial arrangement",
+      "Cemetery caretaker practice",
+      "Cemetery memorial dispute",
+      "Cemetery supernatural report"
+    ],
+    "Location further details - Estate": [
+      "Estate economic basis",
+      "Estate household hierarchy",
+      "Estate inheritance problem",
+      "Estate public obligation",
+      "Estate administration",
+      "Estate internal tension",
+      "Estate tenant obligation"
+    ],
+    "Location type: Estate": [
+      "Rural estate type",
+      "Estate architectural feature",
+      "Estate economic basis",
+      "Estate household hierarchy",
+      "Estate inheritance problem",
+      "Estate public obligation",
+      "Estate administration",
+      "Estate internal tension",
+      "Estate tenant obligation"
+    ],
+    "Location type: Observatory": [
+      "Observatory instrument",
+      "Observatory research purpose"
+    ],
+    "Location type: Almshouse": [
+      "Almshouse admission conflict",
+      "Almshouse support arrangement"
+    ],
+    "Location type: Barracks": [
+      "Barracks civilian friction",
+      "Barracks military function"
+    ],
+    "Location further details - Boarding House": [
+      "Boarding house recurring friction"
+    ],
+    "Location type: Boarding House": [
+      "Boarding house clientele",
+      "Boarding house house rule",
+      "Boarding house recurring friction"
+    ],
+    "Location further details - Tenement": [
+      "Tenement maintenance issue",
+      "Tenement shared amenity"
+    ],
+    "Location type: Tenement": [
+      "Tenement circulation",
+      "Tenement household arrangement",
+      "Tenement maintenance issue",
+      "Tenement shared amenity"
+    ],
+    "Location further details - Unusual Establishment": [
+      "Unusual establishment neighborhood role",
+      "Unusual establishment service",
+      "Unusual establishment type"
+    ],
+    "Location type: Unusual Establishment": [
+      "Unusual establishment clientele",
+      "Unusual establishment internal problem",
+      "Unusual establishment neighborhood role",
+      "Unusual establishment service",
+      "Unusual establishment type"
+    ],
+    "Location matching details": [
+      "Almshouse admission conflict",
+      "Almshouse support arrangement",
+      "Archive preservation problem",
+      "Archive record anomaly",
+      "Archive school and library - Archive access dispute",
+      "Archive school and library - Archive collection",
+      "Archive school and library - School specialty",
+      "Barracks civilian friction",
+      "Barracks military function",
+      "Bathhouse and washhouse - Bathhouse arrangement",
+      "Bathhouse and washhouse - Bathhouse dispute",
+      "Bathhouse public arrangement",
+      "Bathhouse water dispute",
+      "Boarding house clientele",
+      "Boarding house house rule",
+      "Boarding house recurring friction",
+      "Cemetery burial arrangement",
+      "Cemetery caretaker practice",
+      "Cemetery memorial dispute",
+      "Cemetery supernatural report",
+      "Commercial building type",
+      "Commercial magic in daily use",
+      "Courthouse hearing custom",
+      "Courthouse procedural weakness",
+      "Estate administration",
+      "Estate architectural feature",
+      "Estate economic basis",
+      "Estate household hierarchy",
+      "Estate inheritance problem",
+      "Estate internal tension",
+      "Estate public obligation",
+      "Estate tenant obligation",
+      "Guildhall public facility",
+      "Hospital building constraint",
+      "Hospital funding tension",
+      "Hospital patient population",
+      "Hospital treatment practice",
+      "Inn and lodging - Inn complication",
+      "Inn and lodging - Inn guest service",
+      "Inn and lodging - Inn room arrangement",
+      "Inn business model",
+      "Inn guest service",
+      "Inn guestroom detail",
+      "Inn provision and supply",
+      "Inn recurring guest",
+      "Library access practice",
+      "Library collection strength",
+      "Magical site containment practice",
+      "Magical site unintended effect",
+      "Observatory instrument",
+      "Observatory research purpose",
+      "Place magical service safeguard",
+      "Prison corruption risk",
+      "Prison daily regime",
+      "Prison detention purpose",
+      "Prison security feature",
+      "Rural estate type",
+      "School admission rule",
+      "School curriculum specialty",
+      "School disciplinary controversy",
+      "School learning space",
+      "School patron expectation",
+      "Shop business vulnerability",
+      "Shop customer custom",
+      "Shop premises and layout",
+      "Shop proprietor practice",
+      "Shop stock provenance",
+      "Shrine and temple - Shrine disagreement",
+      "Shrine and temple - Shrine local service",
+      "Shrine local practice",
+      "Tavern and alehouse - Tavern entertainment",
+      "Tavern and alehouse - Tavern house specialty",
+      "Tavern and alehouse - Tavern social function",
+      "Tavern and alehouse - Tavern trouble",
+      "Tavern distinctive offering",
+      "Tavern regular patron",
+      "Tavern social tension",
+      "Temple clergy dispute",
+      "Temple daily service",
+      "Temple founding purpose",
+      "Temple liturgical space",
+      "Temple sacred object custody",
+      "Temple settlement specialization",
+      "Tenement circulation",
+      "Tenement household arrangement",
+      "Tenement maintenance issue",
+      "Tenement shared amenity",
+      "Theater audience custom",
+      "Theater backstage feature",
+      "Theater patron conflict",
+      "Theater performance tradition",
+      "Unusual establishment clientele",
+      "Unusual establishment internal problem",
+      "Unusual establishment neighborhood role",
+      "Unusual establishment service",
+      "Unusual establishment type",
+      "Urban open space stewardship",
+      "Urban open space type",
+      "Warehouse disruption",
+      "Warehouse inventory practice",
+      "Warehouse labor arrangement",
+      "Warehouse operating purpose",
+      "Warehouse physical system",
+      "Waterfront daily operation",
+      "Waterfront edge type",
+      "Waterfront hazard",
+      "Workshop and craft yard - Workshop commission",
+      "Workshop and craft yard - Workshop specialty",
+      "Workshop and craft yard - Workshop working hazard",
+      "Workshop contract problem",
+      "Workshop floor arrangement",
+      "Workshop labor practice",
+      "Workshop production specialty",
+      "Workshop waste and reuse"
+    ],
+    "Location category": [],
+    "Urban detail - Street": [
+      "Street character",
+      "Local route obstruction",
+      "Pedestrian shortcut",
+      "Street alignment",
+      "Street canopy and shade",
+      "Street current problem",
+      "Street daily cycle",
+      "Street drainage",
+      "Street jurisdiction",
+      "Street lighting",
+      "Street magical infrastructure",
+      "Street memory and change",
+      "Street nonhuman accommodation",
+      "Street paving and surface",
+      "Street recurring event",
+      "Street restriction",
+      "Street seasonal transformation",
+      "Street smell",
+      "Street sounds",
+      "Street width and movement",
+      "Street-level public service"
+    ],
+    "Urban scene - Street": [
+      "Street type",
+      "Urban detail - Street",
+      "Urban detail - Street"
+    ],
+    "Urban detail - Alley": [
+      "Alley complication",
+      "Alley detail",
+      "Alley use"
+    ],
+    "Urban scene - Alley": [
+      "Alley type",
+      "Urban detail - Alley",
+      "Urban detail - Alley"
+    ],
+    "Urban detail - Bridge": [
+      "Bridge approaches",
+      "Bridge maintenance",
+      "Bridge trouble"
+    ],
+    "Urban scene - Bridge": [
+      "Bridge type",
+      "Urban detail - Bridge",
+      "Urban detail - Bridge"
+    ],
+    "Urban detail - Courtyard": [
+      "Courtyard access conflict",
+      "Courtyard physical detail",
+      "Courtyard shared activity"
+    ],
+    "Urban scene - Courtyard": [
+      "Courtyard type",
+      "Urban detail - Courtyard",
+      "Urban detail - Courtyard"
+    ],
+    "Urban detail - Intersection": [
+      "Intersection conflict",
+      "Intersection landmark"
+    ],
+    "Urban scene - Intersection": [
+      "Intersection type",
+      "Urban detail - Intersection",
+      "Urban detail - Intersection"
+    ],
+    "Urban detail - Plaza": [
+      "Public square",
+      "Plaza dispute",
+      "Plaza public fixture",
+      "Plaza spatial layout",
+      "Plaza use and schedule"
+    ],
+    "Urban scene - Plaza": [
+      "Plaza and square type",
+      "Urban detail - Plaza",
+      "Urban detail - Plaza"
+    ],
+    "Urban detail - Urban block": [
+      "Urban block access",
+      "Urban block land use",
+      "Urban block ownership",
+      "Urban block shared infrastructure",
+      "Urban block tension"
+    ],
+    "Urban scene - Urban block": [
+      "Urban block shape",
+      "Urban detail - Urban block",
+      "Urban detail - Urban block"
+    ],
+    "Urban detail - Waterfront": [
+      "Waterfront daily operation",
+      "Waterfront hazard"
+    ],
+    "Urban scene - Waterfront": [
+      "Waterfront edge type",
+      "Urban detail - Waterfront",
+      "Urban detail - Waterfront"
+    ],
+    "Location surroundings": [
+      "Urban scene - Street",
+      "Urban scene - Alley",
+      "Urban scene - Bridge",
+      "Urban scene - Courtyard",
+      "Urban scene - Intersection",
+      "Urban scene - Plaza",
+      "Urban scene - Urban block",
+      "Urban scene - Waterfront",
+      "Spatial relationship between sites",
+      "Urban boundary transition",
+      "Urban open space stewardship",
+      "Commercial street micro-site"
+    ],
+    "Rural detail - Farm": [
+      "Farm field organization",
+      "Farm labor and tenure tension",
+      "Farm seasonal task",
+      "Farm specialized structure",
+      "Farm water arrangement",
+      "Farm equipment and ingenuity",
+      "Farm field configuration",
+      "Farm household economy",
+      "Farm opportunity",
+      "Farm outbuilding",
+      "Farm tenure and obligation",
+      "Farm vulnerability",
+      "Farmstead arrangement",
+      "Rural farm seasonal task"
+    ],
+    "Rural scene - Farm": [
+      "Farm holding type",
+      "Rural detail - Farm",
+      "Rural detail - Farm"
+    ],
+    "Rural detail - Mill": [
+      "Mill building layout",
+      "Mill operating arrangement",
+      "Mill technical trouble"
+    ],
+    "Rural scene - Mill": [
+      "Rural mill type",
+      "Rural detail - Mill",
+      "Rural detail - Mill"
+    ],
+    "Rural detail - Roadside inn": [
+      "Roadside inn clientele",
+      "Roadside inn distinctive service",
+      "Roadside inn problem"
+    ],
+    "Rural scene - Roadside inn": [
+      "Rural roadside inn type",
+      "Rural detail - Roadside inn",
+      "Rural detail - Roadside inn"
+    ],
+    "Rural detail - Hamlet": [
+      "Hamlet current dispute",
+      "Hamlet governance",
+      "Hamlet shared facility"
+    ],
+    "Rural scene - Hamlet": [
+      "Hamlet founding reason",
+      "Rural detail - Hamlet",
+      "Rural detail - Hamlet"
+    ],
+    "Rural detail - Isolated dwelling": [
+      "Isolated dwelling connection",
+      "Isolated dwelling supplies"
+    ],
+    "Rural scene - Isolated dwelling": [
+      "Isolated dwelling type",
+      "Rural detail - Isolated dwelling",
+      "Rural detail - Isolated dwelling"
+    ],
+    "Rural detail - Orchard and pasture": [
+      "Pasture and grazing arrangement"
+    ],
+    "Rural scene - Orchard and pasture": [
+      "Orchard and vineyard character",
+      "Rural detail - Orchard and pasture",
+      "Rural detail - Orchard and pasture"
+    ],
+    "Rural detail - Rural road": [
+      "Rural bridge and ford",
+      "Rural road condition",
+      "Rural road landmark",
+      "Rural route obstruction",
+      "Rural route traffic"
+    ],
+    "Rural scene - Rural road": [
+      "Rural road type",
+      "Rural detail - Rural road",
+      "Rural detail - Rural road"
+    ],
+    "Rural detail - Rural landscape": [
+      "Rural communal work",
+      "Rural intersettlement relationship",
+      "Rural land boundary",
+      "Rural landscape change",
+      "Rural landscape microfeature",
+      "Rural livestock concern",
+      "Rural local encounter",
+      "Rural magical practice",
+      "Rural nonhuman accommodation",
+      "Rural seasonal gathering",
+      "Rural service specialist",
+      "Rural settlement pattern",
+      "Rural supply chain",
+      "Rural unusual site",
+      "Rural water management"
+    ],
+    "Rural scene - Rural landscape": [
+      "Rural locality type",
+      "Rural detail - Rural landscape",
+      "Rural detail - Rural landscape"
+    ],
+    "Rural setting scene": [
+      "Rural scene - Farm",
+      "Rural scene - Mill",
+      "Rural scene - Roadside inn",
+      "Rural scene - Hamlet",
+      "Rural scene - Isolated dwelling",
+      "Rural scene - Orchard and pasture",
+      "Rural scene - Rural road",
+      "Rural scene - Rural landscape"
+    ],
+    "Related details - Institution": [
+      "Institution founding purpose",
+      "Institution funding",
+      "Institution headquarters",
+      "Institution internal division",
+      "Institution legal authority",
+      "Institution membership",
+      "Institution public benefit",
+      "Institution scandal",
+      "Institution type",
+      "Institution authority detail"
+    ],
+    "Related details - Faction": [
+      "Local faction",
+      "Local faction constituency",
+      "Local faction method",
+      "Local faction objective",
+      "Local faction relationship",
+      "Local faction resource",
+      "Local faction weakness",
+      "Faction principal leverage"
+    ],
+    "Related details - District": [
+      "District organization",
+      "District archetype",
+      "District economic niche",
+      "District function",
+      "District governance",
+      "District identity",
+      "District landmark",
+      "District local custom",
+      "District origin",
+      "District physical character",
+      "District population",
+      "District tension",
+      "District archetype detail"
+    ],
+    "Related details - Household": [
+      "Household form",
+      "Household dwelling",
+      "Household structure",
+      "Household distinctive custom",
+      "Household income arrangement",
+      "Household internal disagreement",
+      "Household visitor",
+      "Household generational disagreement",
+      "Household hidden burden",
+      "Household neighborhood tie",
+      "Household unusual livelihood"
+    ],
+    "Related details - Organization": [
+      "Local organization founding reason",
+      "Local organization internal dispute",
+      "Local organization member duty",
+      "Local organization public project",
+      "Local organization type"
+    ],
+    "Related details - Guild": [
+      "Guild trade",
+      "Guild admission",
+      "Guild privilege",
+      "Guild rivalry",
+      "Guild internal faction",
+      "Guild external relationship",
+      "Guild specialized trade"
+    ],
+    "Related details - Historical episode": [
+      "Historical timeline - Era title",
+      "Historical timeline - Preexisting condition",
+      "Historical timeline - Trigger",
+      "Historical timeline - Immediate outcome",
+      "Historical timeline - Long-term consequence",
+      "Historical timeline - Physical trace",
+      "Historical timeline - Current unresolved legacy"
+    ],
+    "Related details - Neighborhood": [
+      "Neighborhood informal authority",
+      "Neighborhood mutual aid",
+      "Neighborhood recurring gathering",
+      "Neighborhood social network",
+      "Neighborhood tension",
+      "Neighborhood micro-location dispute",
+      "Neighborhood micro-location use",
+      "Neighborhood micro-location",
+      "Neighborhood recurring minor event",
+      "Neighborhood small landmark",
+      "Neighborhood festival",
+      "Neighborhood organization",
+      "Neighborhood public space"
+    ],
+    "Related details - Local dispute": [
+      "Local dispute trigger",
+      "Local dispute stakeholders",
+      "Local dispute escalation",
+      "Local dispute compromise"
+    ],
+    "Related details - Local mystery": [
+      "Local mystery",
+      "Mystery primary evidence",
+      "Local mystery mundane explanation",
+      "Local mystery supernatural explanation"
+    ],
+    "Related details - Political faction": [
+      "Political faction",
+      "Political faction resource",
+      "Political faction weakness"
+    ],
+    "Related details - Provincial administration": [
+      "Provincial identity",
+      "Provincial government",
+      "Provincial grievance",
+      "Provincial reform"
+    ],
+    "Related details - Diplomatic ties": [
+      "Diplomatic relationship",
+      "Diplomatic protocol",
+      "Diplomatic institution",
+      "Diplomatic crisis"
+    ],
+    "Related details - Cultural community": [
+      "Cultural self-description",
+      "Cultural formation",
+      "Cultural internal disagreement",
+      "Cross-border cultural community"
+    ],
+    "Local contextual details": [
+      "Place changing condition",
+      "Conditional establishment",
+      "Conditional everyday establishment",
+      "Conditional establishment network",
+      "Conditional community network",
+      "Conditional household and building network",
+      "Conditional supernatural locality"
+    ],
+    "Wilderness scene - Cave": [
+      "Cave entrance",
+      "Cave human use",
+      "Cave interior",
+      "Cave life"
+    ],
+    "Wilderness scene - River": [
+      "River course",
+      "River crossing"
+    ],
+    "Wilderness scene - Lake": [
+      "Lake character",
+      "Lake shore site"
+    ],
+    "Wilderness scene - Coast": [
+      "Coast character",
+      "Coastal feature"
+    ],
+    "Wilderness scene - Mountain pass": [
+      "Mountain pass character",
+      "Mountain pass infrastructure",
+      "Mountain slope feature"
+    ],
+    "Wilderness scene - Desert": [
+      "Desert landform",
+      "Desert survival site"
+    ],
+    "Wilderness scene - Forest": [
+      "Forest character",
+      "Forest floor feature",
+      "Forest hazard",
+      "Forest resource use",
+      "Forest trail"
+    ],
+    "Wilderness scene - Grassland": [
+      "Grassland character"
+    ],
+    "Wilderness scene - Wetland": [
+      "Wetland character"
+    ],
+    "Wilderness scene - Island": [
+      "Island character"
+    ],
+    "Wilderness scene - Valley": [
+      "Valley character"
+    ],
+    "Wilderness further details - Strange place": [
+      "Weird location caretaker",
+      "Weird location cost",
+      "Weird location discovery",
+      "Weird location dispute",
+      "Weird location limitation",
+      "Weird location local interpretation",
+      "Weird location mundane use",
+      "Weird location nonhuman perspective",
+      "Weird location origin",
+      "Weird location physical rule",
+      "Weird location strange inhabitant",
+      "Weird location transformation",
+      "Weird location visitor"
+    ],
+    "Wilderness scene - Strange place": [
+      "Weird location type",
+      "Wilderness further details - Strange place"
+    ],
+    "Wilderness scene - Impossible architecture": [
+      "Impossible architecture",
+      "Impossible architecture practical issue"
+    ],
+    "Wilderness scene - Otherworld threshold": [
+      "Otherworld threshold",
+      "Otherworld threshold authority",
+      "Otherworld threshold price"
+    ],
+    "Wilderness scene - Living landmark": [
+      "Living landmark",
+      "Living landmark relationship"
+    ],
+    "Wilderness scene - Magical industrial site": [
+      "Magical industrial site",
+      "Magical industrial failure"
+    ],
+    "Wilderness scene - Abandoned site": [
+      "Abandoned fantastical site",
+      "Abandoned fantastical site trace"
+    ],
+    "Wilderness scene - Unusual sacred landscape": [
+      "Unusual sacred dispute",
+      "Unusual sacred landscape"
+    ],
+    "Wilderness scene - Dream location": [
+      "Dream location"
+    ],
+    "Wilderness scene - Memory location": [
+      "Memory location"
+    ],
+    "Wilderness scene - Time anomaly": [
+      "Time anomaly site"
+    ],
+    "Wilderness scene - Anomalous landscape": [
+      "Anomalous ecology",
+      "Anomalous landscape",
+      "Anomalous water",
+      "Anomalous weather"
+    ],
+    "Wilderness scene selector": [
+      "Wilderness scene - Cave",
+      "Wilderness scene - River",
+      "Wilderness scene - Lake",
+      "Wilderness scene - Coast",
+      "Wilderness scene - Mountain pass",
+      "Wilderness scene - Desert",
+      "Wilderness scene - Forest",
+      "Wilderness scene - Grassland",
+      "Wilderness scene - Wetland",
+      "Wilderness scene - Island",
+      "Wilderness scene - Valley",
+      "Wilderness scene - Strange place",
+      "Wilderness scene - Impossible architecture",
+      "Wilderness scene - Otherworld threshold",
+      "Wilderness scene - Living landmark",
+      "Wilderness scene - Magical industrial site",
+      "Wilderness scene - Abandoned site",
+      "Wilderness scene - Unusual sacred landscape",
+      "Wilderness scene - Dream location",
+      "Wilderness scene - Memory location",
+      "Wilderness scene - Time anomaly",
+      "Wilderness scene - Anomalous landscape"
+    ],
+    "Person additional detail": [
+      "NPC contradictory reputation",
+      "NPC difficult choice",
+      "NPC professional rival",
+      "NPC small personal goal",
+      "NPC specialized expertise",
+      "NPC unexpected alliance"
+    ],
+    "Interplace additional connection": [
+      "Interplace hidden connection",
+      "Interplace practical collaboration",
+      "Interplace shared problem",
+      "Interplace social connection"
+    ],
+    "Local rumor alternatives": [
+      "Local rumor with mundane cause",
+      "Local rumor with supernatural cause"
+    ],
+    "Local working life": [
+      "Rare occupation",
+      "Occupation daily task",
+      "Occupation social standing",
+      "Occupation unusual constraint",
+      "Conditional rare occupation",
+      "Rare profession magical variant",
+      "Rare profession nonhuman adaptation"
+    ]
+  },
+  "exceptions": {
+    "Place facade and signage": "Direct baseline location roll in the settlement templates.",
+    "Place local relationship": "Direct baseline location roll in the settlement templates.",
+    "Place recurring event": "Direct baseline location roll in the settlement templates.",
+    "Place small problem": "Direct baseline location roll in the settlement templates.",
+    "Place street position": "Direct baseline location roll in the settlement templates.",
+    "Local place category": "Descriptive alternative to the canonical location category; broad dossier facet retains it.",
+    "Local site type": "Descriptive alternative to the canonical location category; broad dossier facet retains it.",
+    "Place type tags": "Original vocabulary retained for player tables; expanded support vocabulary used by revised templates."
+  },
+  "remaining": []
+}
