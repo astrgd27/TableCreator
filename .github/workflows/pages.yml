@@ -36,16 +36,18 @@ jobs:
           node test-worldbuilding-templates.cjs
           node test-worldbuilding-coverage.cjs
           node test-people-link-repair.cjs
+          node test-settlement-locations.cjs
       - uses: actions/configure-pages@v5
       - name: Prepare static site
         run: |
           mkdir _site
-          cp worldbuilding-facets-v1.js religion-refresh-v1.js worldbuilding-pack-v1.js worldbuilding-templates.js default-content.js world-template-*.txt index.html .nojekyll engine.mjs openapi.json API.md religion-pack.js religion-folders.js religion-template.js deity-pack.js deity-template.js deity-large-template.js religion-domain-additions.js fantasy-deity-large-template.txt fantasy-deity-template.txt fantasy-religion-template.txt RELIGION_PACK.md _site/
+          cp settlement-update-v1.js worldbuilding-facets-v1.js religion-refresh-v1.js worldbuilding-pack-v1.js worldbuilding-templates.js default-content.js world-template-*.txt index.html .nojekyll engine.mjs openapi.json API.md religion-pack.js religion-folders.js religion-template.js deity-pack.js deity-template.js deity-large-template.js religion-domain-additions.js fantasy-deity-large-template.txt fantasy-deity-template.txt fantasy-religion-template.txt RELIGION_PACK.md _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
 
 

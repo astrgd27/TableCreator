@@ -158,3 +158,7 @@ Settlement rosters use the rolled Settlement scale when it states a population; 
 ### Independent people and locations
 
 The large settlement and region templates no longer assign important people to numbered locations or roll a place-connection detail for those people. Their numbers identify separate lists. Size-based counts and person-to-person relationships are retained. The NPC/place-connection table remains available as an optional, separate local vignette about an unnamed resident and unspecified place, preserving table coverage without linking the generated cast. Existing edited large templates are backed up before this one-time update.
+
+
+
+Settlement content update: `settlement-update-v1.js` overlays the immutable Stage 27 storage dictionary with the Stage 29 notable-person replacement and 60 new linked follow-up tables. The one-time migration overwrites default settlement tables, preserves their IDs, and leaves other folders intact. Its seven revised templates add type-matched location details and three optional generic-detail rolls (70%, 45%, 25%). Specialist support tables use stable inline references; conditional generic rows inherit the location and settlement inputs. Edited default templates are backed up before replacement. Directory imports remain authoritative. The versioned update asset contains the current settlement template sources; the original worldbuilding bundle remains available for prior-version migration.
